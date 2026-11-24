@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="inema-course" content="gpt6astratec">
+  <meta name="ARCKHÉ-course" content="gpt6astratec">
   <title>O que o Astra muda no loop de trabalho | GPT-6 Astra: operação técnica</title>
   <meta name="description" content="GPT-6 Astra é um modelo. O que muda para você não é o número no benchmark, é o tamanho da unidade de trabalho que dá para entregar de uma vez: em vez de pedir um trecho, você pede o resultado, o agente executa, você verifica. Este módulo fixa esse loop e o vocabulário que o resto do curso usa.">
 
@@ -12,22 +12,22 @@
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; } }
-      else { var legacy = localStorage.getItem('theme'); if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'inema-dark'; }
+      else { var legacy = localStorage.getItem('theme'); if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark'; }
     } catch (e) { p = clone(DEF); }
-    var THEMES = { 'inema-dark': { dark: true, attr: null, cs: 'dark' }, 'claro': { dark: false, attr: null, cs: 'light' }, 'sepia': { dark: false, attr: 'sepia', cs: 'light' }, 'foco': { dark: null, attr: 'foco', cs: null }, 'contraste': { dark: true, attr: 'contraste', cs: 'dark' } };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var THEMES = { 'ARCKHÉ-dark': { dark: true, attr: null, cs: 'dark' }, 'claro': { dark: false, attr: null, cs: 'light' }, 'sepia': { dark: false, attr: 'sepia', cs: 'light' }, 'foco': { dark: null, attr: 'foco', cs: null }, 'contraste': { dark: true, attr: 'contraste', cs: 'dark' } };
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
     if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
     html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
     html.setAttribute('data-font', p.font || 'inter'); html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style; var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString()); s.setProperty('font-size', scale + '%');
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString()); s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch'); s.setProperty('--lh-body', (+p.leading || 1.7).toString());
     var fam = p.font === 'system' ? 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' : (p.font === 'leitura' ? '"Atkinson Hyperlegible", "Inter", system-ui, sans-serif' : '"Inter", system-ui, sans-serif');
     s.setProperty('--font-body', fam);
@@ -47,7 +47,7 @@
   <link rel="stylesheet" href="../../assets/learn.css">
 
   <!-- Manifesto do curso (obrigatório em toda página) -->
-  <script type="application/json" data-inema-manifest>
+  <script type="application/json" data-ARCKHÉ-manifest>
 {
  "course": "gpt6astratec",
  "tracks": [
@@ -219,16 +219,16 @@
     .qz-fb { display:none; } .qz[data-answered] .qz-fb { display:block; }
 
     /* TOC do módulo é um bloco inline, não uma barra lateral sticky */
-    [data-inema-toc] { position: static !important; top: auto !important; max-height: none !important; }
+    [data-ARCKHÉ-toc] { position: static !important; top: auto !important; max-height: none !important; }
     /* Painel de aparência (classes internas) */
-    .inema-appearance-sec { margin-bottom: .75rem; }
-    .inema-appearance-label { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #9ca3af; margin-bottom: .35rem; }
-    .inema-appearance-row { display: flex; flex-wrap: wrap; gap: .35rem; }
-    .inema-chip { font-size: .8rem; padding: .3rem .65rem; border-radius: .5rem; border: 1px solid #374151; background: rgba(31,41,55,.6); color: #e5e7eb; cursor: pointer; }
-    .inema-chip:hover { border-color: #FACC15; }
-    .inema-chip[aria-pressed="true"], .inema-chip.is-active { background: rgba(250,204,21,.15); border-color: #FACC15; color: #FACC15; }
-    html:not(.dark) .inema-chip { background: #f3f4f6; color: #111827; border-color: #d1d5db; }
-    html:not(.dark) .inema-chip[aria-pressed="true"], html:not(.dark) .inema-chip.is-active { background: rgba(161,98,7,.1); border-color: #a16207; color: #a16207; }
+    .ARCKHÉ-appearance-sec { margin-bottom: .75rem; }
+    .ARCKHÉ-appearance-label { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #9ca3af; margin-bottom: .35rem; }
+    .ARCKHÉ-appearance-row { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .ARCKHÉ-chip { font-size: .8rem; padding: .3rem .65rem; border-radius: .5rem; border: 1px solid #374151; background: rgba(31,41,55,.6); color: #e5e7eb; cursor: pointer; }
+    .ARCKHÉ-chip:hover { border-color: #FACC15; }
+    .ARCKHÉ-chip[aria-pressed="true"], .ARCKHÉ-chip.is-active { background: rgba(250,204,21,.15); border-color: #FACC15; color: #FACC15; }
+    html:not(.dark) .ARCKHÉ-chip { background: #f3f4f6; color: #111827; border-color: #d1d5db; }
+    html:not(.dark) .ARCKHÉ-chip[aria-pressed="true"], html:not(.dark) .ARCKHÉ-chip.is-active { background: rgba(161,98,7,.1); border-color: #a16207; color: #a16207; }
     /* Code box */
     .codebox pre { white-space: pre-wrap; word-break: break-word; }
     
@@ -246,9 +246,9 @@
             <span class="font-bold text-lg hidden md:inline">Astra técnico</span>
           </a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
           <span class="text-neutral-600 hidden sm:inline">-</span>
-          <a href="https://inema.pro" target="_blank" class="text-amber-700 dark:text-slate-300 hover:opacity-80 text-sm font-medium hidden sm:inline">PRO</a>
+          <a href="https://ARCKHÉ.pro" target="_blank" class="text-amber-700 dark:text-slate-300 hover:opacity-80 text-sm font-medium hidden sm:inline">PRO</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../../curso/trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10">
@@ -259,11 +259,11 @@
             <span class="sm:hidden">T2</span>
             <span class="hidden sm:inline">Escalar</span>
           </a>
-          <button type="button" data-inema-journey-open class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 transition-colors">
+          <button type="button" data-ARCKHÉ-journey-open class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 transition-colors">
             <span>🧭</span><span>Minha jornada</span>
-            <span data-inema-journey-badge class="text-xs px-1.5 py-0.5 rounded-full bg-primary/20"></span>
+            <span data-ARCKHÉ-journey-badge class="text-xs px-1.5 py-0.5 rounded-full bg-primary/20"></span>
           </button>
-          <button type="button" data-inema-appearance-toggle="[data-inema-appearance]" aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Aparência e leitura">
+          <button type="button" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Aparência e leitura">
             <span aria-hidden="true">Aa</span>
           </button>
           <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Tema claro/escuro">
@@ -275,40 +275,40 @@
     </div>
   </nav>
   
-  <div data-inema-appearance class="inema-appearance-pop" role="region" aria-label="Aparência e leitura">
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Tema</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-theme="inema-dark" class="inema-chip">Escuro</button>
-        <button type="button" data-inema-set-theme="claro" class="inema-chip">Claro</button>
-        <button type="button" data-inema-set-theme="sepia" class="inema-chip">Sépia</button>
-        <button type="button" data-inema-set-theme="foco" class="inema-chip">Foco</button>
-        <button type="button" data-inema-set-theme="contraste" class="inema-chip">Contraste</button>
+  <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop" role="region" aria-label="Aparência e leitura">
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Tema</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark" class="ARCKHÉ-chip">Escuro</button>
+        <button type="button" data-ARCKHÉ-set-theme="claro" class="ARCKHÉ-chip">Claro</button>
+        <button type="button" data-ARCKHÉ-set-theme="sepia" class="ARCKHÉ-chip">Sépia</button>
+        <button type="button" data-ARCKHÉ-set-theme="foco" class="ARCKHÉ-chip">Foco</button>
+        <button type="button" data-ARCKHÉ-set-theme="contraste" class="ARCKHÉ-chip">Contraste</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Tamanho do texto</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-fontscale="90" class="inema-chip">A-</button>
-        <button type="button" data-inema-set-fontscale="100" class="inema-chip">A</button>
-        <button type="button" data-inema-set-fontscale="115" class="inema-chip">A+</button>
-        <button type="button" data-inema-set-fontscale="130" class="inema-chip">A++</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Tamanho do texto</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-fontscale="90" class="ARCKHÉ-chip">A-</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="100" class="ARCKHÉ-chip">A</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="115" class="ARCKHÉ-chip">A+</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="130" class="ARCKHÉ-chip">A++</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Fonte</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-font="inter" class="inema-chip">Inter</button>
-        <button type="button" data-inema-set-font="system" class="inema-chip">Sistema</button>
-        <button type="button" data-inema-set-font="leitura" class="inema-chip">Leitura</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Fonte</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-font="inter" class="ARCKHÉ-chip">Inter</button>
+        <button type="button" data-ARCKHÉ-set-font="system" class="ARCKHÉ-chip">Sistema</button>
+        <button type="button" data-ARCKHÉ-set-font="leitura" class="ARCKHÉ-chip">Leitura</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Entrelinha</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-leading="1.5" class="inema-chip">Compacta</button>
-        <button type="button" data-inema-set-leading="1.7" class="inema-chip">Normal</button>
-        <button type="button" data-inema-set-leading="1.9" class="inema-chip">Ampla</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Entrelinha</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-leading="1.5" class="ARCKHÉ-chip">Compacta</button>
+        <button type="button" data-ARCKHÉ-set-leading="1.7" class="ARCKHÉ-chip">Normal</button>
+        <button type="button" data-ARCKHÉ-set-leading="1.9" class="ARCKHÉ-chip">Ampla</button>
       </div>
     </div>
   </div>
@@ -332,15 +332,15 @@
       <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">35</div><div class="text-xs text-neutral-400">Minutos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Básico</div><div class="text-xs text-neutral-400">Nível</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Fundamento</div><div class="text-xs text-neutral-400">Tipo</div></div>
       </div>
-      <div data-inema-meter="modulo:1-1" class="inema-meter max-w-md mt-6" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso do módulo">
-        <div class="flex justify-between text-sm text-neutral-400 mb-1"><span data-inema-meter-frac>0 de 6</span><span data-inema-meter-pct>0%</span></div>
-        <div class="inema-bar h-2 bg-dark-700 rounded-full overflow-hidden"><div class="inema-bar__fill h-full bg-emerald-500 rounded-full transition-all" data-inema-meter-fill style="width:0%"></div></div>
+      <div data-ARCKHÉ-meter="modulo:1-1" class="ARCKHÉ-meter max-w-md mt-6" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso do módulo">
+        <div class="flex justify-between text-sm text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac>0 de 6</span><span data-ARCKHÉ-meter-pct>0%</span></div>
+        <div class="ARCKHÉ-bar h-2 bg-dark-700 rounded-full overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-emerald-500 rounded-full transition-all" data-ARCKHÉ-meter-fill style="width:0%"></div></div>
       </div>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 inema-prose" data-inema-module="1-1" data-inema-track="1">
-    <nav aria-label="Tópicos deste módulo" class="mb-12 bg-dark-800 rounded-xl border border-dark-600 p-5" data-inema-toc>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ARCKHÉ-prose" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1">
+    <nav aria-label="Tópicos deste módulo" class="mb-12 bg-dark-800 rounded-xl border border-dark-600 p-5" data-ARCKHÉ-toc>
       <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-3">Neste módulo</p>
       <ol class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
         <li><a href="#topico-1" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>A unidade de trabalho cresceu</span></a></li><li><a href="#topico-2" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Benchmarks: o que ler e o que ignorar</span></a></li><li><a href="#topico-3" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>As três superfícies: app, Codex e CLI</span></a></li><li><a href="#topico-4" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>O contrato de tarefa em três linhas</span></a></li><li><a href="#topico-5" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span><span>Onde as coisas somem: sessões, projetos e pin</span></a></li><li><a href="#topico-6" class="flex items-start gap-2 text-neutral-300 hover:text-emerald-400"><span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</span><span>Mapa do curso e o que você vai construir</span></a></li>
@@ -348,17 +348,17 @@
     </nav>
 
     <!-- TÓPICO 1 -->
-    <section id="topico-1" data-inema-topic="modulo-1-1#topico-1" class="mb-16">
+    <section id="topico-1" data-ARCKHÉ-topic="modulo-1-1#topico-1" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">📦 A unidade de trabalho cresceu</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p1">Modelos anteriores já escreviam código. O que muda com o Astra é o tamanho da tarefa que sobrevive inteira de ponta a ponta: localizar o arquivo certo num projeto que ele nunca viu, editar, reiniciar o serviço, abrir a página, ler o resultado e reportar. Num projeto de agentes local, "troque o modelo da seção Codex para gpt-6-astra" foi de prompt a serviço reiniciado com o modelo novo em poucos minutos, sem apontar o arquivo. Isso é o que muda o loop: você deixa de escrever passos e passa a escrever resultados verificáveis.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p1">Modelos anteriores já escreviam código. O que muda com o Astra é o tamanho da tarefa que sobrevive inteira de ponta a ponta: localizar o arquivo certo num projeto que ele nunca viu, editar, reiniciar o serviço, abrir a página, ler o resultado e reportar. Num projeto de agentes local, "troque o modelo da seção Codex para gpt-6-astra" foi de prompt a serviço reiniciado com o modelo novo em poucos minutos, sem apontar o arquivo. Isso é o que muda o loop: você deixa de escrever passos e passa a escrever resultados verificáveis.</p>
 
       <aside class="bg-dark-800/60 rounded-xl border border-dashed border-emerald-500/30 p-5 mb-6">
         <p class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-3">Novo aqui? Termos deste tópico</p>
         <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-          <div><dt class="font-semibold text-neutral-100">Agente</dt><dd class="text-neutral-400" data-inema-block="m1-1-p2">Um modelo com ferramentas (editar arquivo, rodar comando, abrir navegador) e um loop: planeja, age, lê o resultado, age de novo até terminar.</dd></div><div><dt class="font-semibold text-neutral-100">Codex</dt><dd class="text-neutral-400" data-inema-block="m1-1-p3">O produto de agente de código da OpenAI. Existe como app de computador, extensão no ChatGPT e CLI (linha de comando). Todos usam sua assinatura, não uma chave de API.</dd></div><div><dt class="font-semibold text-neutral-100">Critério de pronto</dt><dd class="text-neutral-400" data-inema-block="m1-1-p4">Condição observável que encerra a tarefa. "Página abre e o seletor mostra gpt-6-astra" é um critério; "melhore o app" não é.</dd></div><div><dt class="font-semibold text-neutral-100">Rollback</dt><dd class="text-neutral-400" data-inema-block="m1-1-p5">Voltar para a versão anterior de um arquivo ou projeto. Com git, é um comando. Sem git, é sorte.</dd></div>
+          <div><dt class="font-semibold text-neutral-100">Agente</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m1-1-p2">Um modelo com ferramentas (editar arquivo, rodar comando, abrir navegador) e um loop: planeja, age, lê o resultado, age de novo até terminar.</dd></div><div><dt class="font-semibold text-neutral-100">Codex</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m1-1-p3">O produto de agente de código da OpenAI. Existe como app de computador, extensão no ChatGPT e CLI (linha de comando). Todos usam sua assinatura, não uma chave de API.</dd></div><div><dt class="font-semibold text-neutral-100">Critério de pronto</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m1-1-p4">Condição observável que encerra a tarefa. "Página abre e o seletor mostra gpt-6-astra" é um critério; "melhore o app" não é.</dd></div><div><dt class="font-semibold text-neutral-100">Rollback</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m1-1-p5">Voltar para a versão anterior de um arquivo ou projeto. Com git, é um comando. Sem git, é sorte.</dd></div>
         </dl>
       </aside>
 
@@ -401,24 +401,24 @@
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Regra de bolso</h3>
-        <p class="text-neutral-300" data-inema-block="m1-1-p6">Se você consegue descrever como vai saber que ficou pronto, delegue inteiro. Se não consegue, o problema é seu critério, não o modelo.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m1-1-p6">Se você consegue descrever como vai saber que ficou pronto, delegue inteiro. Se não consegue, o problema é seu critério, não o modelo.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 2 -->
-    <section id="topico-2" data-inema-topic="modulo-1-1#topico-2" class="mb-16">
+    <section id="topico-2" data-ARCKHÉ-topic="modulo-1-1#topico-2" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">📊 Benchmarks: o que ler e o que ignorar</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p7">A <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">página de lançamento</a> apresenta o Astra como o modelo mais forte da OpenAI em uso de computador, engenharia de software, segurança e trabalho profissional, com ganhos grandes em benchmarks de agentes e resultados novos em problemas abertos de matemática. A tabela de custo por tarefa resolvida mostra o Astra abaixo dos concorrentes de fronteira, isto é, mais barato por tarefa concluída, não mais barato por token.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p7">A <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">página de lançamento</a> apresenta o Astra como o modelo mais forte da OpenAI em uso de computador, engenharia de software, segurança e trabalho profissional, com ganhos grandes em benchmarks de agentes e resultados novos em problemas abertos de matemática. A tabela de custo por tarefa resolvida mostra o Astra abaixo dos concorrentes de fronteira, isto é, mais barato por tarefa concluída, não mais barato por token.</p>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> O que os números não dizem</h3>
@@ -445,24 +445,24 @@
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> O erro clássico da primeira semana</h3>
-        <p class="text-neutral-300" data-inema-block="m1-1-p8">Ler "melhor em computer use" e deixar o agente postar, publicar ou pagar sem revisar. Numa sessão de teste, o agente publicou um anúncio com o nome errado do produto. Funcionou; o conteúdo estava errado. Rascunho primeiro, sempre (módulo 1.3).</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m1-1-p8">Ler "melhor em computer use" e deixar o agente postar, publicar ou pagar sem revisar. Numa sessão de teste, o agente publicou um anúncio com o nome errado do produto. Funcionou; o conteúdo estava errado. Rascunho primeiro, sempre (módulo 1.3).</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 3 -->
-    <section id="topico-3" data-inema-topic="modulo-1-1#topico-3" class="mb-16">
+    <section id="topico-3" data-ARCKHÉ-topic="modulo-1-1#topico-3" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🧱 As três superfícies: app, Codex e CLI</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p9">O modelo é um só. O que muda é o harness em volta: quais ferramentas ele tem, onde os arquivos ficam, se a sessão persiste. No ChatGPT comum, o Astra pode não aparecer no seletor. Na área de trabalho do ChatGPT (o modo voltado a tarefas) e no app do Codex, ele aparece após atualizar o app. No CLI, é um valor de configuração.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p9">O modelo é um só. O que muda é o harness em volta: quais ferramentas ele tem, onde os arquivos ficam, se a sessão persiste. No ChatGPT comum, o Astra pode não aparecer no seletor. Na área de trabalho do ChatGPT (o modo voltado a tarefas) e no app do Codex, ele aparece após atualizar o app. No CLI, é um valor de configuração.</p>
 
       <div class="overflow-x-auto rounded-xl border border-dark-600 mb-6">
         <table class="w-full text-sm text-left">
@@ -492,24 +492,24 @@
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Para quem já usa Claude Code</h3>
-        <p class="text-neutral-300" data-inema-block="m1-1-p10">O mapa é 1:1. App do Codex ≈ Claude Code desktop; Codex CLI ≈ claude no terminal; skills ≈ skills; MCP é o mesmo protocolo. O que você aprendeu de contrato de prompt transfere sem ajuste.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m1-1-p10">O mapa é 1:1. App do Codex ≈ Claude Code desktop; Codex CLI ≈ claude no terminal; skills ≈ skills; MCP é o mesmo protocolo. O que você aprendeu de contrato de prompt transfere sem ajuste.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 4 -->
-    <section id="topico-4" data-inema-topic="modulo-1-1#topico-4" class="mb-16">
+    <section id="topico-4" data-ARCKHÉ-topic="modulo-1-1#topico-4" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🧾 O contrato de tarefa em três linhas</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p11">Três linhas. Resultado: o estado final, em uma frase observável. Onde: o arquivo, a URL, a pasta. Prova: o que o agente deve mostrar para você aceitar (saída de comando, screenshot, caminho de arquivo). Uma quarta linha opcional, escopo negativo, evita os efeitos colaterais mais comuns.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p11">Três linhas. Resultado: o estado final, em uma frase observável. Onde: o arquivo, a URL, a pasta. Prova: o que o agente deve mostrar para você aceitar (saída de comando, screenshot, caminho de arquivo). Uma quarta linha opcional, escopo negativo, evita os efeitos colaterais mais comuns.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-emerald-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -550,21 +550,21 @@ Quando terminar, me mostre a prova antes de qualquer outra coisa.</code></pre>
         </div>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 5 -->
-    <section id="topico-5" data-inema-topic="modulo-1-1#topico-5" class="mb-16">
+    <section id="topico-5" data-ARCKHÉ-topic="modulo-1-1#topico-5" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
         <h2 class="text-2xl font-bold">🧭 Onde as coisas somem: sessões, projetos e pin</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p12">Rodando várias tarefas ao mesmo tempo (troca de modelo, redesign de UI, vídeo, jogo), a barra lateral do app do Codex reorganiza a lista e uma conversa recém-criada parece ter sumido. Ela está em "recentes" ou dentro do projeto. A rotina: toda sessão que vai durar mais de uma resposta recebe pin na hora em que é criada; toda mudança arriscada nasce de um fork da sessão estável, não da própria.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p12">Rodando várias tarefas ao mesmo tempo (troca de modelo, redesign de UI, vídeo, jogo), a barra lateral do app do Codex reorganiza a lista e uma conversa recém-criada parece ter sumido. Ela está em "recentes" ou dentro do projeto. A rotina: toda sessão que vai durar mais de uma resposta recebe pin na hora em que é criada; toda mudança arriscada nasce de um fork da sessão estável, não da própria.</p>
 
       <div class="space-y-5 mb-6">
         <h3 class="text-lg font-semibold text-emerald-400 mb-2">Rotina de organização</h3>
@@ -574,7 +574,7 @@ Quando terminar, me mostre a prova antes de qualquer outra coisa.</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Um projeto por pasta de código</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p13">Crie o projeto apontando para a pasta. Sessões daquele projeto herdam a pasta e as instruções dela (AGENTS.md).</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p13">Crie o projeto apontando para a pasta. Sessões daquele projeto herdam a pasta e as instruções dela (AGENTS.md).</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -582,7 +582,7 @@ Quando terminar, me mostre a prova antes de qualquer outra coisa.</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Pin na criação</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p14">Antes de mandar o primeiro prompt longo, fixe a sessão. Desfixe quando a tarefa fechar.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p14">Antes de mandar o primeiro prompt longo, fixe a sessão. Desfixe quando a tarefa fechar.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -590,7 +590,7 @@ Quando terminar, me mostre a prova antes de qualquer outra coisa.</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Fork para experimentos</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p15">Redesign, migração, refatoração grande: fork da sessão que está funcionando. Se der errado, a original continua intacta.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p15">Redesign, migração, refatoração grande: fork da sessão que está funcionando. Se der errado, a original continua intacta.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -598,7 +598,7 @@ Quando terminar, me mostre a prova antes de qualquer outra coisa.</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Nomeie pelo resultado</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p16">"trocar modelo → astra", "UI v2", "vídeo promo remotion". Nomes por resultado são buscáveis; "nova conversa 7" não é.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p16">"trocar modelo → astra", "UI v2", "vídeo promo remotion". Nomes por resultado são buscáveis; "nova conversa 7" não é.</p>
           </div>
         </div>
       </div>
@@ -621,19 +621,19 @@ codex agents</code></pre>
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Conversa sumiu?</h3>
-        <p class="text-neutral-300" data-inema-block="m1-1-p17">Antes de recriar: barra lateral → recentes, depois o projeto. Recriar a sessão perde o contexto que o agente já construiu sobre o projeto e custa tokens de novo.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m1-1-p17">Antes de recriar: barra lateral → recentes, depois o projeto. Recriar a sessão perde o contexto que o agente já construiu sobre o projeto e custa tokens de novo.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 6 -->
-    <section id="topico-6" data-inema-topic="modulo-1-1#topico-6" class="mb-16">
+    <section id="topico-6" data-ARCKHÉ-topic="modulo-1-1#topico-6" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">🗺️ Mapa do curso e o que você vai construir</h2>
@@ -683,26 +683,26 @@ codex agents</code></pre>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">🧭</div>
           <h4 class="font-semibold text-emerald-400 mb-2">Trilha 1: operar</h4>
-          <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p18">Ativar, delegar com contrato, usar o navegador com segurança, iterar num projeto com rollback. Sai com o loop funcionando.</p>
+          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p18">Ativar, delegar com contrato, usar o navegador com segurança, iterar num projeto com rollback. Sai com o loop funcionando.</p>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">🛠️</div>
           <h4 class="font-semibold text-emerald-400 mb-2">Trilha 2: escalar</h4>
-          <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p19">Ensinar o agente (skills), conectar ferramentas (MCP), controlar cota e custo, e dar memória comum aos agentes. Sai com o sistema.</p>
+          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p19">Ensinar o agente (skills), conectar ferramentas (MCP), controlar cota e custo, e dar memória comum aos agentes. Sai com o sistema.</p>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">🖱️</div>
           <h4 class="font-semibold text-emerald-400 mb-2">Aprofundamento</h4>
-          <p class="text-neutral-300 text-sm" data-inema-block="m1-1-p20">Computer use em cinco fluxos completos está no curso irmão <a href="https://inematds.github.io/astra-computer-use/" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">Computer Use com o GPT-6 Astra</a>. Aqui você vê o essencial para operar com segurança.</p>
+          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-p20">Computer use em cinco fluxos completos está no curso irmão <a href="https://linnoff88-dev.github.io/ target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">Computer Use com o GPT-6 Astra</a>. Aqui você vê o essencial para operar com segurança.</p>
         </div>
       </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-p21">Os prompts e comandos foram conferidos no Codex CLI 0.153 e no app do Codex em setembro de 2026. Menus mudam; o contrato e o loop não.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-p21">Os prompts e comandos foram conferidos no Codex CLI 0.153 e no app do Codex em setembro de 2026. Menus mudam; o contrato e o loop não.</p>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
@@ -757,9 +757,9 @@ codex agents</code></pre>
   <footer class="border-t border-dark-600 mt-16 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-2">
       <p>GPT-6 Astra: operação técnica · Trilha 1 — Setup e operação · 2026 ·
-        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> -
-        <a href="https://inema.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
-      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://inematds.github.io/gpt6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
+        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300">ARCKHÉ AI</a> -
+        <a href="https://ARCKHÉ.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
+      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://linnoff88-dev.github.io/ target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
     </div>
   </footer>
 
@@ -788,7 +788,7 @@ codex agents</code></pre>
       html.classList.toggle('dark');
       const dark = html.classList.contains('dark');
       localStorage.setItem('theme', dark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { try { INEMA.setPref('theme', dark ? 'inema-dark' : 'claro'); } catch (e) {} }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { try { ARCKHÉ.setPref('theme', dark ? 'ARCKHÉ-dark' : 'claro'); } catch (e) {} }
     });
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -813,7 +813,7 @@ codex agents</code></pre>
 
   <script src="../../assets/learn.js"></script>
   <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>

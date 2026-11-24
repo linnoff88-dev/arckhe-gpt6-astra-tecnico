@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="inema-course" content="gpt6astratec">
+  <meta name="ARCKHÉ-course" content="gpt6astratec">
   <title>Skills: ensinar a ferramenta e o gosto | GPT-6 Astra: operação técnica</title>
   <meta name="description" content="Um vídeo promocional de 30 segundos, com trilha, saiu de um único prompt porque o agente já tinha a skill do Remotion. O mesmo agente, sem skill, produziu um site sem graça. A diferença entre os dois resultados não é o modelo: é o que foi ensinado antes. Este módulo cobre os dois tipos de skill, a de ferramenta e a de gosto.">
 
@@ -12,22 +12,22 @@
 (function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; } }
-      else { var legacy = localStorage.getItem('theme'); if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'inema-dark'; }
+      else { var legacy = localStorage.getItem('theme'); if (legacy === 'light') p.theme = 'claro'; else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark'; }
     } catch (e) { p = clone(DEF); }
-    var THEMES = { 'inema-dark': { dark: true, attr: null, cs: 'dark' }, 'claro': { dark: false, attr: null, cs: 'light' }, 'sepia': { dark: false, attr: 'sepia', cs: 'light' }, 'foco': { dark: null, attr: 'foco', cs: null }, 'contraste': { dark: true, attr: 'contraste', cs: 'dark' } };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var THEMES = { 'ARCKHÉ-dark': { dark: true, attr: null, cs: 'dark' }, 'claro': { dark: false, attr: null, cs: 'light' }, 'sepia': { dark: false, attr: 'sepia', cs: 'light' }, 'foco': { dark: null, attr: 'foco', cs: null }, 'contraste': { dark: true, attr: 'contraste', cs: 'dark' } };
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
     if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
     if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
     html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
     html.setAttribute('data-font', p.font || 'inter'); html.setAttribute('data-accent', p.accent || 'emerald');
     var s = html.style; var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString()); s.setProperty('font-size', scale + '%');
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString()); s.setProperty('font-size', scale + '%');
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch'); s.setProperty('--lh-body', (+p.leading || 1.7).toString());
     var fam = p.font === 'system' ? 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' : (p.font === 'leitura' ? '"Atkinson Hyperlegible", "Inter", system-ui, sans-serif' : '"Inter", system-ui, sans-serif');
     s.setProperty('--font-body', fam);
@@ -47,7 +47,7 @@
   <link rel="stylesheet" href="../../assets/learn.css">
 
   <!-- Manifesto do curso (obrigatório em toda página) -->
-  <script type="application/json" data-inema-manifest>
+  <script type="application/json" data-ARCKHÉ-manifest>
 {
  "course": "gpt6astratec",
  "tracks": [
@@ -219,16 +219,16 @@
     .qz-fb { display:none; } .qz[data-answered] .qz-fb { display:block; }
 
     /* TOC do módulo é um bloco inline, não uma barra lateral sticky */
-    [data-inema-toc] { position: static !important; top: auto !important; max-height: none !important; }
+    [data-ARCKHÉ-toc] { position: static !important; top: auto !important; max-height: none !important; }
     /* Painel de aparência (classes internas) */
-    .inema-appearance-sec { margin-bottom: .75rem; }
-    .inema-appearance-label { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #9ca3af; margin-bottom: .35rem; }
-    .inema-appearance-row { display: flex; flex-wrap: wrap; gap: .35rem; }
-    .inema-chip { font-size: .8rem; padding: .3rem .65rem; border-radius: .5rem; border: 1px solid #374151; background: rgba(31,41,55,.6); color: #e5e7eb; cursor: pointer; }
-    .inema-chip:hover { border-color: #FACC15; }
-    .inema-chip[aria-pressed="true"], .inema-chip.is-active { background: rgba(250,204,21,.15); border-color: #FACC15; color: #FACC15; }
-    html:not(.dark) .inema-chip { background: #f3f4f6; color: #111827; border-color: #d1d5db; }
-    html:not(.dark) .inema-chip[aria-pressed="true"], html:not(.dark) .inema-chip.is-active { background: rgba(161,98,7,.1); border-color: #a16207; color: #a16207; }
+    .ARCKHÉ-appearance-sec { margin-bottom: .75rem; }
+    .ARCKHÉ-appearance-label { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #9ca3af; margin-bottom: .35rem; }
+    .ARCKHÉ-appearance-row { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .ARCKHÉ-chip { font-size: .8rem; padding: .3rem .65rem; border-radius: .5rem; border: 1px solid #374151; background: rgba(31,41,55,.6); color: #e5e7eb; cursor: pointer; }
+    .ARCKHÉ-chip:hover { border-color: #FACC15; }
+    .ARCKHÉ-chip[aria-pressed="true"], .ARCKHÉ-chip.is-active { background: rgba(250,204,21,.15); border-color: #FACC15; color: #FACC15; }
+    html:not(.dark) .ARCKHÉ-chip { background: #f3f4f6; color: #111827; border-color: #d1d5db; }
+    html:not(.dark) .ARCKHÉ-chip[aria-pressed="true"], html:not(.dark) .ARCKHÉ-chip.is-active { background: rgba(161,98,7,.1); border-color: #a16207; color: #a16207; }
     /* Code box */
     .codebox pre { white-space: pre-wrap; word-break: break-word; }
     
@@ -246,9 +246,9 @@
             <span class="font-bold text-lg hidden md:inline">Astra técnico</span>
           </a>
           <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+          <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">ARCKHÉ AI</a>
           <span class="text-neutral-600 hidden sm:inline">-</span>
-          <a href="https://inema.pro" target="_blank" class="text-amber-700 dark:text-slate-300 hover:opacity-80 text-sm font-medium hidden sm:inline">PRO</a>
+          <a href="https://ARCKHÉ.pro" target="_blank" class="text-amber-700 dark:text-slate-300 hover:opacity-80 text-sm font-medium hidden sm:inline">PRO</a>
         </div>
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../../curso/trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors">
@@ -259,11 +259,11 @@
             <span class="sm:hidden">T2</span>
             <span class="hidden sm:inline">Escalar</span>
           </a>
-          <button type="button" data-inema-journey-open class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 transition-colors">
+          <button type="button" data-ARCKHÉ-journey-open class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 transition-colors">
             <span>🧭</span><span>Minha jornada</span>
-            <span data-inema-journey-badge class="text-xs px-1.5 py-0.5 rounded-full bg-primary/20"></span>
+            <span data-ARCKHÉ-journey-badge class="text-xs px-1.5 py-0.5 rounded-full bg-primary/20"></span>
           </button>
-          <button type="button" data-inema-appearance-toggle="[data-inema-appearance]" aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Aparência e leitura">
+          <button type="button" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Aparência e leitura">
             <span aria-hidden="true">Aa</span>
           </button>
           <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" title="Tema claro/escuro">
@@ -275,40 +275,40 @@
     </div>
   </nav>
   
-  <div data-inema-appearance class="inema-appearance-pop" role="region" aria-label="Aparência e leitura">
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Tema</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-theme="inema-dark" class="inema-chip">Escuro</button>
-        <button type="button" data-inema-set-theme="claro" class="inema-chip">Claro</button>
-        <button type="button" data-inema-set-theme="sepia" class="inema-chip">Sépia</button>
-        <button type="button" data-inema-set-theme="foco" class="inema-chip">Foco</button>
-        <button type="button" data-inema-set-theme="contraste" class="inema-chip">Contraste</button>
+  <div data-ARCKHÉ-appearance class="ARCKHÉ-appearance-pop" role="region" aria-label="Aparência e leitura">
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Tema</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-theme="ARCKHÉ-dark" class="ARCKHÉ-chip">Escuro</button>
+        <button type="button" data-ARCKHÉ-set-theme="claro" class="ARCKHÉ-chip">Claro</button>
+        <button type="button" data-ARCKHÉ-set-theme="sepia" class="ARCKHÉ-chip">Sépia</button>
+        <button type="button" data-ARCKHÉ-set-theme="foco" class="ARCKHÉ-chip">Foco</button>
+        <button type="button" data-ARCKHÉ-set-theme="contraste" class="ARCKHÉ-chip">Contraste</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Tamanho do texto</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-fontscale="90" class="inema-chip">A-</button>
-        <button type="button" data-inema-set-fontscale="100" class="inema-chip">A</button>
-        <button type="button" data-inema-set-fontscale="115" class="inema-chip">A+</button>
-        <button type="button" data-inema-set-fontscale="130" class="inema-chip">A++</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Tamanho do texto</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-fontscale="90" class="ARCKHÉ-chip">A-</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="100" class="ARCKHÉ-chip">A</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="115" class="ARCKHÉ-chip">A+</button>
+        <button type="button" data-ARCKHÉ-set-fontscale="130" class="ARCKHÉ-chip">A++</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Fonte</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-font="inter" class="inema-chip">Inter</button>
-        <button type="button" data-inema-set-font="system" class="inema-chip">Sistema</button>
-        <button type="button" data-inema-set-font="leitura" class="inema-chip">Leitura</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Fonte</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-font="inter" class="ARCKHÉ-chip">Inter</button>
+        <button type="button" data-ARCKHÉ-set-font="system" class="ARCKHÉ-chip">Sistema</button>
+        <button type="button" data-ARCKHÉ-set-font="leitura" class="ARCKHÉ-chip">Leitura</button>
       </div>
     </div>
-    <div class="inema-appearance-sec">
-      <p class="inema-appearance-label">Entrelinha</p>
-      <div class="inema-appearance-row">
-        <button type="button" data-inema-set-leading="1.5" class="inema-chip">Compacta</button>
-        <button type="button" data-inema-set-leading="1.7" class="inema-chip">Normal</button>
-        <button type="button" data-inema-set-leading="1.9" class="inema-chip">Ampla</button>
+    <div class="ARCKHÉ-appearance-sec">
+      <p class="ARCKHÉ-appearance-label">Entrelinha</p>
+      <div class="ARCKHÉ-appearance-row">
+        <button type="button" data-ARCKHÉ-set-leading="1.5" class="ARCKHÉ-chip">Compacta</button>
+        <button type="button" data-ARCKHÉ-set-leading="1.7" class="ARCKHÉ-chip">Normal</button>
+        <button type="button" data-ARCKHÉ-set-leading="1.9" class="ARCKHÉ-chip">Ampla</button>
       </div>
     </div>
   </div>
@@ -332,15 +332,15 @@
       <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">45</div><div class="text-xs text-neutral-400">Minutos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Intermediário</div><div class="text-xs text-neutral-400">Nível</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Prática</div><div class="text-xs text-neutral-400">Tipo</div></div>
       </div>
-      <div data-inema-meter="modulo:2-1" class="inema-meter max-w-md mt-6" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso do módulo">
-        <div class="flex justify-between text-sm text-neutral-400 mb-1"><span data-inema-meter-frac>0 de 6</span><span data-inema-meter-pct>0%</span></div>
-        <div class="inema-bar h-2 bg-dark-700 rounded-full overflow-hidden"><div class="inema-bar__fill h-full bg-blue-500 rounded-full transition-all" data-inema-meter-fill style="width:0%"></div></div>
+      <div data-ARCKHÉ-meter="modulo:2-1" class="ARCKHÉ-meter max-w-md mt-6" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso do módulo">
+        <div class="flex justify-between text-sm text-neutral-400 mb-1"><span data-ARCKHÉ-meter-frac>0 de 6</span><span data-ARCKHÉ-meter-pct>0%</span></div>
+        <div class="ARCKHÉ-bar h-2 bg-dark-700 rounded-full overflow-hidden"><div class="ARCKHÉ-bar__fill h-full bg-blue-500 rounded-full transition-all" data-ARCKHÉ-meter-fill style="width:0%"></div></div>
       </div>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 inema-prose" data-inema-module="2-1" data-inema-track="2">
-    <nav aria-label="Tópicos deste módulo" class="mb-12 bg-dark-800 rounded-xl border border-dark-600 p-5" data-inema-toc>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ARCKHÉ-prose" data-ARCKHÉ-module="2-1" data-ARCKHÉ-track="2">
+    <nav aria-label="Tópicos deste módulo" class="mb-12 bg-dark-800 rounded-xl border border-dark-600 p-5" data-ARCKHÉ-toc>
       <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-3">Neste módulo</p>
       <ol class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
         <li><a href="#topico-1" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>O que é uma skill e por que ela muda o resultado</span></a></li><li><a href="#topico-2" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Skill de ferramenta: vídeo com Remotion em um prompt</span></a></li><li><a href="#topico-3" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Skill de gosto: a biblioteca de referência visual</span></a></li><li><a href="#topico-4" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Skills de terceiros: achar, auditar, usar</span></a></li><li><a href="#topico-5" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span><span>Organizar seu conjunto de skills</span></a></li><li><a href="#topico-6" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</span><span>Prática: escrever a sua primeira skill</span></a></li>
@@ -348,17 +348,17 @@
     </nav>
 
     <!-- TÓPICO 1 -->
-    <section id="topico-1" data-inema-topic="modulo-2-1#topico-1" class="mb-16">
+    <section id="topico-1" data-ARCKHÉ-topic="modulo-2-1#topico-1" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">🧩 O que é uma skill e por que ela muda o resultado</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-p1">Uma skill é uma pasta com um arquivo de instruções na raiz. O cabeçalho traz nome e uma descrição que diz <em>quando</em> usar. O agente lê só o cabeçalho na maior parte do tempo; quando a tarefa bate com a descrição, carrega o corpo. É por isso que dez skills instaladas não pesam no contexto de uma tarefa que não usa nenhuma.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-p1">Uma skill é uma pasta com um arquivo de instruções na raiz. O cabeçalho traz nome e uma descrição que diz <em>quando</em> usar. O agente lê só o cabeçalho na maior parte do tempo; quando a tarefa bate com a descrição, carrega o corpo. É por isso que dez skills instaladas não pesam no contexto de uma tarefa que não usa nenhuma.</p>
 
       <aside class="bg-dark-800/60 rounded-xl border border-dashed border-blue-500/30 p-5 mb-6">
         <p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Novo aqui? Termos deste tópico</p>
         <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-          <div><dt class="font-semibold text-neutral-100">Skill</dt><dd class="text-neutral-400" data-inema-block="m2-1-p2">Pasta com instruções (e às vezes scripts) que ensina o agente a fazer um tipo de tarefa do seu jeito.</dd></div><div><dt class="font-semibold text-neutral-100">Frontmatter</dt><dd class="text-neutral-400" data-inema-block="m2-1-p3">O cabeçalho no topo do arquivo, entre três hifens, com nome e descrição. É o que o agente lê para decidir se carrega a skill.</dd></div><div><dt class="font-semibold text-neutral-100">Carregamento sob demanda</dt><dd class="text-neutral-400" data-inema-block="m2-1-p4">O corpo da skill entra no contexto só quando a descrição casa com a tarefa. Barato por padrão.</dd></div><div><dt class="font-semibold text-neutral-100">MCP</dt><dd class="text-neutral-400" data-inema-block="m2-1-p5">Protocolo que conecta o agente a um servidor de ferramentas externo (Blender, banco de dados, API). Skill ensina procedimento; MCP dá capacidade nova. Ver módulo 2.2.</dd></div>
+          <div><dt class="font-semibold text-neutral-100">Skill</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m2-1-p2">Pasta com instruções (e às vezes scripts) que ensina o agente a fazer um tipo de tarefa do seu jeito.</dd></div><div><dt class="font-semibold text-neutral-100">Frontmatter</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m2-1-p3">O cabeçalho no topo do arquivo, entre três hifens, com nome e descrição. É o que o agente lê para decidir se carrega a skill.</dd></div><div><dt class="font-semibold text-neutral-100">Carregamento sob demanda</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m2-1-p4">O corpo da skill entra no contexto só quando a descrição casa com a tarefa. Barato por padrão.</dd></div><div><dt class="font-semibold text-neutral-100">MCP</dt><dd class="text-neutral-400" data-ARCKHÉ-block="m2-1-p5">Protocolo que conecta o agente a um servidor de ferramentas externo (Blender, banco de dados, API). Skill ensina procedimento; MCP dá capacidade nova. Ver módulo 2.2.</dd></div>
         </dl>
       </aside>
 
@@ -406,24 +406,24 @@ description: &gt;-
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> A descrição é a interface</h3>
-        <p class="text-neutral-300" data-inema-block="m2-1-p6">Skill boa com descrição vaga nunca é carregada. Escreva a descrição pensando no pedido que o usuário vai digitar, não no que a skill faz por dentro.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-1-p6">Skill boa com descrição vaga nunca é carregada. Escreva a descrição pensando no pedido que o usuário vai digitar, não no que a skill faz por dentro.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 2 -->
-    <section id="topico-2" data-inema-topic="modulo-2-1#topico-2" class="mb-16">
+    <section id="topico-2" data-ARCKHÉ-topic="modulo-2-1#topico-2" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">🎬 Skill de ferramenta: vídeo com Remotion em um prompt</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-p7">Remotion renderiza vídeo a partir de componentes React: você descreve cenas em código, ele exporta MP4. Isso o torna ideal para um agente, que escreve código melhor do que arrasta linha do tempo. Com a skill instalada, o pedido é uma frase; sem ela, o agente reinventa a estrutura do projeto a cada vez e erra o comando de render.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-p7">Remotion renderiza vídeo a partir de componentes React: você descreve cenas em código, ele exporta MP4. Isso o torna ideal para um agente, que escreve código melhor do que arrasta linha do tempo. Com a skill instalada, o pedido é uma frase; sem ela, o agente reinventa a estrutura do projeto a cada vez e erra o comando de render.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -457,24 +457,24 @@ mkdir -p video/frames &amp;&amp; ffmpeg -i video/out.mp4 -vf fps=1/6 video/frame
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Trilha sonora tem dono</h3>
-        <p class="text-neutral-300" data-inema-block="m2-1-p8">Peça explicitamente faixa livre de direitos ou nenhuma. Um agente que "acha uma música" pode trazer material licenciado para dentro do seu projeto, e o problema aparece na publicação, não no render.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-1-p8">Peça explicitamente faixa livre de direitos ou nenhuma. Um agente que "acha uma música" pode trazer material licenciado para dentro do seu projeto, e o problema aparece na publicação, não no render.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 3 -->
-    <section id="topico-3" data-inema-topic="modulo-2-1#topico-3" class="mb-16">
+    <section id="topico-3" data-ARCKHÉ-topic="modulo-2-1#topico-3" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🎨 Skill de gosto: a biblioteca de referência visual</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-p9">Um redesign pedido sem referência sai genérico: fundo escuro, muito espaço vazio, pouca informação. A correção não é um prompt melhor, é uma biblioteca: páginas que você admira, com anotação do <em>porquê</em>, e regras que podem ser conferidas. O agente deixa de adivinhar o seu gosto e passa a aplicar um documento.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-p9">Um redesign pedido sem referência sai genérico: fundo escuro, muito espaço vazio, pouca informação. A correção não é um prompt melhor, é uma biblioteca: páginas que você admira, com anotação do <em>porquê</em>, e regras que podem ser conferidas. O agente deixa de adivinhar o seu gosto e passa a aplicar um documento.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -546,21 +546,21 @@ description: &gt;-
         <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> O ganho maior não é estético: é a última barra. Com guia, reprovar deixa de ser opinião e vira apontar a regra violada.</figcaption>
       </figure>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 4 -->
-    <section id="topico-4" data-inema-topic="modulo-2-1#topico-4" class="mb-16">
+    <section id="topico-4" data-ARCKHÉ-topic="modulo-2-1#topico-4" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🔍 Skills de terceiros: achar, auditar, usar</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-p10">Delegar a busca de uma skill funciona bem. Delegar a decisão de confiar nela, não. O procedimento: o agente encontra candidatas, lê o conteúdo, relata o que os scripts fazem, e só depois de você aprovar é que a skill entra em uso, primeiro num projeto descartável.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-p10">Delegar a busca de uma skill funciona bem. Delegar a decisão de confiar nela, não. O procedimento: o agente encontra candidatas, lê o conteúdo, relata o que os scripts fazem, e só depois de você aprovar é que a skill entra em uso, primeiro num projeto descartável.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -589,24 +589,24 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Sandbox antes de confiança</h3>
-        <p class="text-neutral-300" data-inema-block="m2-1-p11">A primeira execução de uma skill de terceiro roda num projeto descartável, com sandbox restrito à pasta e aprovação a pedido (módulo 1.2). Se ela pedir algo fora disso, essa é a resposta sobre confiar.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-1-p11">A primeira execução de uma skill de terceiro roda num projeto descartável, com sandbox restrito à pasta e aprovação a pedido (módulo 1.2). Se ela pedir algo fora disso, essa é a resposta sobre confiar.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 5 -->
-    <section id="topico-5" data-inema-topic="modulo-2-1#topico-5" class="mb-16">
+    <section id="topico-5" data-ARCKHÉ-topic="modulo-2-1#topico-5" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
         <h2 class="text-2xl font-bold">🗂️ Organizar seu conjunto de skills</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-p12">Quando várias skills têm descrições parecidas, o carregamento vira loteria. Duas saídas: gatilhos mutuamente exclusivos nas descrições, ou marcar as antigas como invocação direta apenas, sem gatilho automático. A segunda é o que se faz com versões legadas que precisam existir para manter trabalho antigo.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-p12">Quando várias skills têm descrições parecidas, o carregamento vira loteria. Duas saídas: gatilhos mutuamente exclusivos nas descrições, ou marcar as antigas como invocação direta apenas, sem gatilho automático. A segunda é o que se faz com versões legadas que precisam existir para manter trabalho antigo.</p>
 
       <div class="overflow-x-auto rounded-xl border border-dark-600 mb-6">
         <table class="w-full text-sm text-left">
@@ -624,7 +624,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Uma skill, um resultado</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p13">Se a descrição precisa de "e também", são duas skills.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p13">Se a descrição precisa de "e também", são duas skills.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -632,7 +632,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Gatilho no vocabulário do usuário</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p14">Escreva a descrição com as palavras que você digita, não com jargão interno.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p14">Escreva a descrição com as palavras que você digita, não com jargão interno.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -640,7 +640,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Projeto contra global</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p15">Regra que vale só num repositório vai no AGENTS.md dele; skill global é para procedimento que atravessa projetos.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p15">Regra que vale só num repositório vai no AGENTS.md dele; skill global é para procedimento que atravessa projetos.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -648,21 +648,21 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Revisão trimestral</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p16">Skill não usada em três meses: apague ou marque como invocação direta. Conjunto pequeno escolhe melhor.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p16">Skill não usada em três meses: apague ou marque como invocação direta. Conjunto pequeno escolhe melhor.</p>
           </div>
         </div>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
     <!-- TÓPICO 6 -->
-    <section id="topico-6" data-inema-topic="modulo-2-1#topico-6" class="mb-16">
+    <section id="topico-6" data-ARCKHÉ-topic="modulo-2-1#topico-6" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">🧪 Prática: escrever a sua primeira skill</h2>
@@ -676,7 +676,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Escolha o procedimento</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p17">Algo que você explica ao agente toda semana: como você quer commits, como monta um relatório, como publica um post.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p17">Algo que você explica ao agente toda semana: como você quer commits, como monta um relatório, como publica um post.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -684,7 +684,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Escreva o corpo primeiro</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p18">Passos com comandos exatos e critérios de aceite. Depois escreva a descrição a partir do pedido que você digitaria.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p18">Passos com comandos exatos e critérios de aceite. Depois escreva a descrição a partir do pedido que você digitaria.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -692,7 +692,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Teste o gatilho</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p19">Sessão nova, pedido natural. A skill tem que ser carregada sem você citá-la.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p19">Sessão nova, pedido natural. A skill tem que ser carregada sem você citá-la.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -700,7 +700,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Teste a execução</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p20">Rode a tarefa. Onde o agente improvisou, falta um passo no arquivo.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p20">Rode a tarefa. Onde o agente improvisou, falta um passo no arquivo.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -708,7 +708,7 @@ Termine com uma recomendação e o risco em uma frase. Não baixe nada para fora
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Corrija com o erro real</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-1-p21">Cada erro vira uma linha na seção "Erros comuns". A skill melhora por uso, não por planejamento.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-1-p21">Cada erro vira uma linha na seção "Erros comuns". A skill melhora por uso, não por planejamento.</p>
           </div>
         </div>
       </div>
@@ -726,14 +726,14 @@ Antes de executar, me diga: quais skills você carregou para esta tarefa e por q
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Escreva a skill depois de fazer na mão</h3>
-        <p class="text-neutral-300" data-inema-block="m2-1-p22">Skill escrita antes da primeira execução vira ficção. Faça a tarefa uma vez conversando, anote onde você corrigiu o agente, e transforme essas correções no corpo da skill.</p>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-1-p22">Skill escrita antes da primeira execução vira ficção. Faça a tarefa uma vez conversando, anote onde você corrigiu o agente, e transforme essas correções no corpo da skill.</p>
       </div>
       
-      <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
-        <span class="inema-ico-todo" aria-hidden="true">&#9744;</span>
-        <span class="inema-ico-done" aria-hidden="true">&#9745;</span>
-        <span class="inema-label-todo">Marcar como lido</span>
-        <span class="inema-label-done">Lido</span>
+      <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
+        <span class="ARCKHÉ-ico-todo" aria-hidden="true">&#9744;</span>
+        <span class="ARCKHÉ-ico-done" aria-hidden="true">&#9745;</span>
+        <span class="ARCKHÉ-label-todo">Marcar como lido</span>
+        <span class="ARCKHÉ-label-done">Lido</span>
       </button>
     </section>
 
@@ -788,9 +788,9 @@ Antes de executar, me diga: quais skills você carregou para esta tarefa e por q
   <footer class="border-t border-dark-600 mt-16 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-2">
       <p>GPT-6 Astra: operação técnica · Trilha 2 — Construir e escalar · 2026 ·
-        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> -
-        <a href="https://inema.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
-      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://inematds.github.io/gpt6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
+        <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300">ARCKHÉ AI</a> -
+        <a href="https://ARCKHÉ.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
+      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://linnoff88-dev.github.io/ target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
     </div>
   </footer>
 
@@ -819,7 +819,7 @@ Antes de executar, me diga: quais skills você carregou para esta tarefa e por q
       html.classList.toggle('dark');
       const dark = html.classList.contains('dark');
       localStorage.setItem('theme', dark ? 'dark' : 'light');
-      if (window.INEMA && INEMA.setPref) { try { INEMA.setPref('theme', dark ? 'inema-dark' : 'claro'); } catch (e) {} }
+      if (window.ARCKHÉ && ARCKHÉ.setPref) { try { ARCKHÉ.setPref('theme', dark ? 'ARCKHÉ-dark' : 'claro'); } catch (e) {} }
     });
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -844,7 +844,7 @@ Antes de executar, me diga: quais skills você carregou para esta tarefa e por q
 
   <script src="../../assets/learn.js"></script>
   <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
   </script>
 </body>
 </html>
