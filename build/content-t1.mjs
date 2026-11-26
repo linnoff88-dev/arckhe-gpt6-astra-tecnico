@@ -4,7 +4,7 @@ import { c, svg } from './lib.mjs';
 const link = (href, txt) => `<a href="${href}" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">${txt}</a>`;
 const LAUNCH = 'https://openai.com/index/gpt-6-astra/';
 const CODEX_DOCS = 'https://developers.openai.com/codex/';
-const CU_COURSE = 'https://inematds.github.io/astra-computer-use/';
+const CU_COURSE = 'https://linnoff88-dev.github.io/arckhe-/';
 
 // ---------------------------------------------------------------- 1.1
 const M11 = {
