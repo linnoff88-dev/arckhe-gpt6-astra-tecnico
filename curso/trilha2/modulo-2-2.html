@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="inema-course" content="gpt6astratec">
-  <title>MCP e trabalhos longos | GPT-6 Astra: operação técnica</title>
-  <meta name="description" content="Um jogo de corrida 3D saiu de um prompt porque o agente conectou no Blender por MCP, modelou, exportou e ligou ao código. Trabalhos assim rodam por dezenas de minutos, pedem permissão no meio e às vezes reiniciam. Este módulo cobre conectar um servidor MCP, delegar uma tarefa longa e retomá-la sem perder o progresso.">
+  <title>MCP e trabalhos longos | GPT-6 Astra: operaçêo técnica</title>
+  <meta name="description" content="Um jogo de corrida 3D saiu de um prompt porque o agente conectou no Blender por MCP, modelou, exportou e ligou ao código. Trabalhos assim rodam por dezenas de minutos, pedem permissêo no meio e às vezes reiniciam. Este módulo cobre conectar um servidor MCP, delegar uma tarefa longa e retomá-la sem perder o progresso.">
 
   <!-- ANTI-FOUC: bloqueante, antes de tudo -->
   <script>
@@ -53,7 +53,7 @@
  "tracks": [
   {
    "n": "1",
-   "title": "Setup e operação",
+   "title": "Setup e operaçêo",
    "modules": [
     {
      "id": "1-1",
@@ -99,7 +99,7 @@
     },
     {
      "id": "2-3",
-     "title": "Cota, custo e orquestração",
+     "title": "Cota, custo e orquestraçêo",
      "topics": 6,
      "href": "curso/trilha2/modulo-2-3.html"
     },
@@ -218,7 +218,7 @@
     .qz-opt[data-state="no"] { border-color: #ef4444; background: rgba(239,68,68,.12); }
     .qz-fb { display:none; } .qz[data-answered] .qz-fb { display:block; }
 
-    /* TOC do módulo é um bloco inline, não uma barra lateral sticky */
+    /* TOC do módulo é um bloco inline, nêo uma barra lateral sticky */
     [data-inema-toc] { position: static !important; top: auto !important; max-height: none !important; }
     /* Painel de aparência (classes internas) */
     .inema-appearance-sec { margin-bottom: .75rem; }
@@ -327,7 +327,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.2</span>
       <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔌 MCP e trabalhos longos</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">Um jogo de corrida 3D saiu de um prompt porque o agente conectou no Blender por MCP, modelou, exportou e ligou ao código. Trabalhos assim rodam por dezenas de minutos, pedem permissão no meio e às vezes reiniciam. Este módulo cobre conectar um servidor MCP, delegar uma tarefa longa e retomá-la sem perder o progresso.</p>
+      <p class="text-lg text-neutral-400 max-w-3xl">Um jogo de corrida 3D saiu de um prompt porque o agente conectou no Blender por MCP, modelou, exportou e ligou ao código. Trabalhos assim rodam por dezenas de minutos, pedem permissêo no meio e às vezes reiniciam. Este módulo cobre conectar um servidor MCP, delegar uma tarefa longa e retomá-la sem perder o progresso.</p>
       
       <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">45</div><div class="text-xs text-neutral-400">Minutos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Avançado</div><div class="text-xs text-neutral-400">Nível</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Prática</div><div class="text-xs text-neutral-400">Tipo</div></div>
@@ -353,12 +353,12 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">🔗 O que MCP resolve</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p1">MCP padroniza como um agente descobre e chama ferramentas de fora. O servidor anuncia o que sabe fazer; o agente chama com argumentos e recebe um retorno estruturado. A diferença prática em relação a "escreva um script": o agente vê o resultado de cada chamada e ajusta na hora, em vez de descobrir o erro só no fim.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p1">MCP padroniza como um agente descobre e chama ferramentas de fora. O servidor anuncia o que sabe fazer; o agente chama com argumentos e recebe um retorno estruturado. A diferença prática em relaçêo a "escreva um script": o agente vê o resultado de cada chamada e ajusta na hora, em vez de descobrir o erro só no fim.</p>
 
       <aside class="bg-dark-800/60 rounded-xl border border-dashed border-blue-500/30 p-5 mb-6">
         <p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Novo aqui? Termos deste tópico</p>
         <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-          <div><dt class="font-semibold text-neutral-100">Servidor MCP</dt><dd class="text-neutral-400" data-inema-block="m2-2-p2">Programa que expõe ferramentas para o agente. Roda na sua máquina (stdio) ou remoto (HTTP).</dd></div><div><dt class="font-semibold text-neutral-100">Ferramenta</dt><dd class="text-neutral-400" data-inema-block="m2-2-p3">Uma função com nome, parâmetros e retorno. "criar_cubo(tamanho)" é uma ferramenta.</dd></div><div><dt class="font-semibold text-neutral-100">stdio</dt><dd class="text-neutral-400" data-inema-block="m2-2-p4">O servidor roda como processo local e conversa pela entrada e saída padrão. O modo mais comum.</dd></div><div><dt class="font-semibold text-neutral-100">Retorno estruturado</dt><dd class="text-neutral-400" data-inema-block="m2-2-p5">A resposta da ferramenta em formato que o agente entende (dados, não texto livre), o que permite corrigir no mesmo ciclo.</dd></div>
+          <div><dt class="font-semibold text-neutral-100">Servidor MCP</dt><dd class="text-neutral-400" data-inema-block="m2-2-p2">Programa que expõe ferramentas para o agente. Roda na sua máquina (stdio) ou remoto (HTTP).</dd></div><div><dt class="font-semibold text-neutral-100">Ferramenta</dt><dd class="text-neutral-400" data-inema-block="m2-2-p3">Uma funçêo com nome, parâmetros e retorno. "criar_cubo(tamanho)" é uma ferramenta.</dd></div><div><dt class="font-semibold text-neutral-100">stdio</dt><dd class="text-neutral-400" data-inema-block="m2-2-p4">O servidor roda como processo local e conversa pela entrada e saída padrêo. O modo mais comum.</dd></div><div><dt class="font-semibold text-neutral-100">Retorno estruturado</dt><dd class="text-neutral-400" data-inema-block="m2-2-p5">A resposta da ferramenta em formato que o agente entende (dados, nêo texto livre), o que permite corrigir no mesmo ciclo.</dd></div>
         </dl>
       </aside>
 
@@ -378,7 +378,7 @@
         <path class="wf-flow" d="M390 102 L410 102" stroke="#38bdf8" stroke-width="2" fill="none"/><polygon points="406,97 406,107 412,102" fill="#38bdf8"/><g class="wf-a"><rect x="412" y="60" width="162" height="84" rx="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.8"/>
         <circle cx="430" cy="78" r="10" fill="#3b82f6"/><text x="430" y="82" text-anchor="middle" fill="#0b1220" font-family="Inter,sans-serif" font-size="11" font-weight="700">3</text>
         <text x="493" y="104" text-anchor="middle" fill="#bfdbfe" font-family="Inter,sans-serif" font-size="12" font-weight="700">Retorno</text>
-        <text x="493" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">dados, não prosa</text></g>
+        <text x="493" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">dados, nêo prosa</text></g>
         <path class="wf-flow" d="M576 102 L596 102" stroke="#38bdf8" stroke-width="2" fill="none"/><polygon points="592,97 592,107 598,102" fill="#38bdf8"/><g class="wf-a"><rect x="598" y="60" width="162" height="84" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="1.8"/>
         <circle cx="616" cy="78" r="10" fill="#38bdf8"/><text x="616" y="82" text-anchor="middle" fill="#0b1220" font-family="Inter,sans-serif" font-size="11" font-weight="700">4</text>
         <text x="679" y="104" text-anchor="middle" fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" font-weight="700">Agente corrige</text>
@@ -418,7 +418,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">⚙️ Conectar um servidor MCP no Codex</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p7">O CLI tem um grupo de comandos para isso. Servidores locais recebem o comando de execução depois de <code>--</code>; servidores remotos usam <code>--url</code>. Variáveis de ambiente vão em <code>--env</code> e só valem para servidores locais. A <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">documentação do Codex</a> traz os detalhes da sua versão.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p7">O CLI tem um grupo de comandos para isso. Servidores locais recebem o comando de execuçêo depois de <code>--</code>; servidores remotos usam <code>--url</code>. Variáveis de ambiente vêo em <code>--env</code> e só valem para servidores locais. A <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">documentaçêo do Codex</a> traz os detalhes da sua versêo.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -435,9 +435,9 @@ codex mcp add &lt;NOME&gt; --url https://&lt;HOST&gt;/&lt;CAMINHO&gt;
 codex mcp list
 codex mcp get &lt;NOME&gt;
 
-# remover quando não usar mais
+# remover quando nêo usar mais
 codex mcp remove &lt;NOME&gt;</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> `codex mcp list` mostra o servidor. Depois, numa sessão, pergunte "quais ferramentas MCP você tem disponíveis?" e confira se as do servidor aparecem pelo nome.</div>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> `codex mcp list` mostra o servidor. Depois, numa sessêo, pergunte "quais ferramentas MCP você tem disponíveis?" e confira se as do servidor aparecem pelo nome.</div>
       </div>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
@@ -454,25 +454,25 @@ codex mcp add blender -- uvx blender-mcp
 #    (o servidor fala com o Blender aberto; sem o Blender rodando, as chamadas falham)
 
 codex mcp list</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Com o Blender aberto e o complemento ativo, peça "liste os objetos da cena atual do Blender". Uma lista real (mesmo que só o cubo padrão) confirma as duas pontas.</div>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Com o Blender aberto e o complemento ativo, peça "liste os objetos da cena atual do Blender". Uma lista real (mesmo que só o cubo padrêo) confirma as duas pontas.</div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
           <h4 class="font-bold text-blue-400 mb-4">&#10003; Servidor local (stdio)</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Aplicativo que roda na sua máquina (Blender, editor, banco local)</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Precisa de acesso a arquivos ou processos seus</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Latência mínima, sem rede</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Você controla a versão do servidor</span></li></ul>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Aplicativo que roda na sua máquina (Blender, editor, banco local)</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Precisa de acesso a arquivos ou processos seus</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Latência mínima, sem rede</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Você controla a versêo do servidor</span></li></ul>
         </div>
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
           <h4 class="font-bold text-red-400 mb-4">&#10007; Servidor remoto (--url)</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Serviço da equipe, compartilhado entre pessoas</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Exige autenticação e sai da sua máquina</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Depende de rede: trate queda como caso esperado</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Não use --env: variáveis só valem para stdio</span></li></ul>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Serviço da equipe, compartilhado entre pessoas</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Exige autenticaçêo e sai da sua máquina</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Depende de rede: trate queda como caso esperado</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Nêo use --env: variáveis só valem para stdio</span></li></ul>
         </div>
       </div>
 
       <div class="overflow-x-auto rounded-xl border border-dark-600 mb-6">
         <table class="w-full text-sm text-left">
           
-          <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">Sintoma</th><th class="px-4 py-3 font-semibold">Causa</th><th class="px-4 py-3 font-semibold">Ação</th></tr></thead>
-          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Ferramentas não aparecem</td><td class="px-4 py-3 text-neutral-300">Servidor não subiu</td><td class="px-4 py-3 text-neutral-300">`codex mcp get <nome>` e rode o comando na mão para ver o erro</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Sobe e cai</td><td class="px-4 py-3 text-neutral-300">Dependência ou versão</td><td class="px-4 py-3 text-neutral-300">Rode o comando do servidor isolado no terminal; leia o stderr</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Conecta mas falha toda chamada</td><td class="px-4 py-3 text-neutral-300">App alvo fechado</td><td class="px-4 py-3 text-neutral-300">Abra o aplicativo e ative o complemento do lado dele</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Pede permissão a cada chamada</td><td class="px-4 py-3 text-neutral-300">Política de aprovação</td><td class="px-4 py-3 text-neutral-300">Aprovação a pedido é o certo aqui; não passe para "never"</td></tr></tbody>
+          <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">Sintoma</th><th class="px-4 py-3 font-semibold">Causa</th><th class="px-4 py-3 font-semibold">Açêo</th></tr></thead>
+          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Ferramentas nêo aparecem</td><td class="px-4 py-3 text-neutral-300">Servidor nêo subiu</td><td class="px-4 py-3 text-neutral-300">`codex mcp get <nome>` e rode o comando na mêo para ver o erro</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Sobe e cai</td><td class="px-4 py-3 text-neutral-300">Dependência ou versêo</td><td class="px-4 py-3 text-neutral-300">Rode o comando do servidor isolado no terminal; leia o stderr</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Conecta mas falha toda chamada</td><td class="px-4 py-3 text-neutral-300">App alvo fechado</td><td class="px-4 py-3 text-neutral-300">Abra o aplicativo e ative o complemento do lado dele</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Pede permissêo a cada chamada</td><td class="px-4 py-3 text-neutral-300">Política de aprovaçêo</td><td class="px-4 py-3 text-neutral-300">Aprovaçêo a pedido é o certo aqui; nêo passe para "never"</td></tr></tbody>
         </table>
       </div>
       
@@ -499,17 +499,17 @@ codex mcp list</code></pre>
         </div>
         <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">Use o servidor MCP do Blender (Blender já está aberto) e o código desta pasta.
 
-Resultado: um protótipo jogável de corrida no navegador, com uma pista 3D modelada no Blender, um veículo controlável e colisão com as bordas da pista.
+Resultado: um protótipo jogável de corrida no navegador, com uma pista 3D modelada no Blender, um veículo controlável e colisêo com as bordas da pista.
 
 Marcos (pare e me mostre a evidência em cada um antes de seguir):
 M1. Cena do Blender com a pista modelada. Evidência: render de topo em ./art/m1-pista.png e lista de objetos da cena.
 M2. Assets exportados em glTF para ./public/models/. Evidência: `ls -la` da pasta e tamanho de cada arquivo.
 M3. Pista carregada na engine do jogo, câmera posicionada. Evidência: screenshot do jogo rodando.
-M4. Veículo controlável com colisão. Evidência: screenshot + como rodar localmente.
+M4. Veículo controlável com colisêo. Evidência: screenshot + como rodar localmente.
 
-Escopo: não instale dependências novas sem me perguntar. Não altere nada fora de ./art, ./public/models e ./src/game.
+Escopo: nêo instale dependências novas sem me perguntar. Nêo altere nada fora de ./art, ./public/models e ./src/game.
 Tempo esperado: isto pode levar de 20 a 60 minutos. Se algo travar por mais de 5 minutos na mesma etapa, pare e me diga o que travou.</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Em cada marco, a evidência existe e você a abre. M2 com arquivos de 0 byte significa exportação falhada, mesmo que o agente diga que deu certo. Só libere o marco seguinte depois de olhar.</div>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Em cada marco, a evidência existe e você a abre. M2 com arquivos de 0 byte significa exportaçêo falhada, mesmo que o agente diga que deu certo. Só libere o marco seguinte depois de olhar.</div>
       </div>
 
       <figure class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
@@ -527,11 +527,11 @@ Tempo esperado: isto pode levar de 20 a 60 minutos. Se algo travar por mais de 5
         <text x="400" y="273" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="14" font-weight="700">Artefato</text>
         <text x="400" y="291" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="10" font-weight="400">assets exportados e integrados</text></g>
       <text x="60" y="170" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="10" transform="rotate(-90 60 170)">de fora para dentro</text></svg>
-        <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> Se qualquer camada de fora estiver frouxa, o artefato do centro sai errado e você descobre tarde. Os marcos são o que traz a descoberta para perto do erro.</figcaption>
+        <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> Se qualquer camada de fora estiver frouxa, o artefato do centro sai errado e você descobre tarde. Os marcos sêo o que traz a descoberta para perto do erro.</figcaption>
       </figure>
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Tempo longo não é sinal de progresso</h3>
+        <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Tempo longo nêo é sinal de progresso</h3>
         <p class="text-neutral-300" data-inema-block="m2-2-p9">Uma tarefa que roda 45 minutos pode estar tentando a mesma chamada falha desde o minuto 4. A cláusula "se travar 5 minutos na mesma etapa, pare e me diga" transforma silêncio em relatório.</p>
       </div>
       
@@ -549,7 +549,7 @@ Tempo esperado: isto pode levar de 20 a 60 minutos. Se algo travar por mais de 5
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🔁 Retomar: permissões, reinícios, "continue"</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p10">Tarefas com MCP pedem permissão quando tocam algo novo e às vezes o aplicativo reinicia. A regra é a mesma do módulo 1.3: volte à mesma conversa e mande continuar. Com marcos, a retomada é ainda mais barata, porque o estado está registrado em evidências no disco.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-p10">Tarefas com MCP pedem permissêo quando tocam algo novo e às vezes o aplicativo reinicia. A regra é a mesma do módulo 1.3: volte à mesma conversa e mande continuar. Com marcos, a retomada é ainda mais barata, porque o estado está registrado em evidências no disco.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -558,7 +558,7 @@ Tempo esperado: isto pode levar de 20 a 60 minutos. Se algo travar por mais de 5
         </div>
         <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">continue.
 
-Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/game), me diga qual foi o último marco concluído com evidência real e qual é o próximo passo. Não refaça marcos já concluídos.</code></pre>
+Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/game), me diga qual foi o último marco concluído com evidência real e qual é o próximo passo. Nêo refaça marcos já concluídos.</code></pre>
         <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> A resposta cita arquivos que existem (confira com `ls`). Se ela propõe recomeçar do M1 com os arquivos do M2 no disco, corrija apontando os caminhos.</div>
       </div>
 
@@ -594,14 +594,14 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Se o contexto sumiu</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-2-p14">Cole o contrato original e a lista de marcos concluídos. Custa um prompt, não 40 minutos.</p>
+            <p class="text-neutral-300 text-sm" data-inema-block="m2-2-p14">Cole o contrato original e a lista de marcos concluídos. Custa um prompt, nêo 40 minutos.</p>
           </div>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Uma conversa por tarefa longa, com pin</h3>
-        <p class="text-neutral-300" data-inema-block="m2-2-p15">Tarefa de MCP compartilhando conversa com outra tarefa faz "continue" retomar a errada. Pin na criação (módulo 1.1) resolve.</p>
+        <p class="text-neutral-300" data-inema-block="m2-2-p15">Tarefa de MCP compartilhando conversa com outra tarefa faz "continue" retomar a errada. Pin na criaçêo (módulo 1.1) resolve.</p>
       </div>
       
       <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
@@ -622,13 +622,13 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
       <div class="overflow-x-auto rounded-xl border border-dark-600 mb-6">
         <table class="w-full text-sm text-left">
           <caption class="text-left text-xs text-neutral-500 px-4 pt-3">A pergunta que decide: com que frequência isso vai se repetir, e existe retorno estruturado disponível?</caption>
-          <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">Situação</th><th class="px-4 py-3 font-semibold">Caminho</th><th class="px-4 py-3 font-semibold">Por quê</th></tr></thead>
-          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App com MCP pronto, uso recorrente</td><td class="px-4 py-3 text-neutral-300">MCP</td><td class="px-4 py-3 text-neutral-300">Retorno estruturado, ciclo curto, sem screenshot</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App sem API, uso único</td><td class="px-4 py-3 text-neutral-300">Computer use</td><td class="px-4 py-3 text-neutral-300">Setup zero; a fragilidade não importa numa vez</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App sem API, uso semanal</td><td class="px-4 py-3 text-neutral-300">Computer use uma vez, depois ferramenta</td><td class="px-4 py-3 text-neutral-300">Mapeie com a tela, gere a linha de comando, rode barato</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Procedimento seu, ferramentas que já existem</td><td class="px-4 py-3 text-neutral-300">Skill</td><td class="px-4 py-3 text-neutral-300">Não falta capacidade, falta método</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App com API mas sem MCP</td><td class="px-4 py-3 text-neutral-300">Script + skill</td><td class="px-4 py-3 text-neutral-300">Mais simples que escrever um servidor</td></tr></tbody>
+          <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">Situaçêo</th><th class="px-4 py-3 font-semibold">Caminho</th><th class="px-4 py-3 font-semibold">Por quê</th></tr></thead>
+          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App com MCP pronto, uso recorrente</td><td class="px-4 py-3 text-neutral-300">MCP</td><td class="px-4 py-3 text-neutral-300">Retorno estruturado, ciclo curto, sem screenshot</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App sem API, uso único</td><td class="px-4 py-3 text-neutral-300">Computer use</td><td class="px-4 py-3 text-neutral-300">Setup zero; a fragilidade nêo importa numa vez</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App sem API, uso semanal</td><td class="px-4 py-3 text-neutral-300">Computer use uma vez, depois ferramenta</td><td class="px-4 py-3 text-neutral-300">Mapeie com a tela, gere a linha de comando, rode barato</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Procedimento seu, ferramentas que já existem</td><td class="px-4 py-3 text-neutral-300">Skill</td><td class="px-4 py-3 text-neutral-300">Nêo falta capacidade, falta método</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">App com API mas sem MCP</td><td class="px-4 py-3 text-neutral-300">Script + skill</td><td class="px-4 py-3 text-neutral-300">Mais simples que escrever um servidor</td></tr></tbody>
         </table>
       </div>
 
       <figure class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-        <svg viewBox="0 0 800 320" class="w-full h-auto" role="img" aria-label="Balança entre custo de montar a integração e custo de repetir a tarefa na tela"><defs>
+        <svg viewBox="0 0 800 320" class="w-full h-auto" role="img" aria-label="Balança entre custo de montar a integraçêo e custo de repetir a tarefa na tela"><defs>
     <linearGradient id="s16-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
     <filter id="s16-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <pattern id="s16-grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1.3" fill="#3b82f6" opacity="0.14"/></pattern>
@@ -640,9 +640,9 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
       <text x="180" y="142" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="15" font-weight="800">Montar (MCP/ferramenta)</text><text x="180" y="166" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">custo alto uma vez</text><text x="180" y="180" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">rápido e estável depois</text><text x="180" y="194" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">roda com modelo barato</text></g>
       <g class="wf-a"><rect x="520" y="110" width="200" height="110" rx="14" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
       <line x1="620" y1="70" x2="620" y2="110" stroke="#38bdf8" stroke-width="2"/>
-      <text x="620" y="142" text-anchor="middle" fill="#38bdf8" font-family="Inter,sans-serif" font-size="15" font-weight="800">Operar a tela</text><text x="620" y="166" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">custo zero de setup</text><text x="620" y="180" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">caro a cada execução</text><text x="620" y="194" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">frágil a mudanças de interface</text></g>
-      <text x="400" y="306" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" font-style="italic">Balança entre custo de montar a integração e custo de repetir a tarefa na tela</text></svg>
-        <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> A balança vira na terceira ou quarta repetição. Antes disso, operar a tela é honesto; depois, é desperdício.</figcaption>
+      <text x="620" y="142" text-anchor="middle" fill="#38bdf8" font-family="Inter,sans-serif" font-size="15" font-weight="800">Operar a tela</text><text x="620" y="166" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">custo zero de setup</text><text x="620" y="180" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">caro a cada execuçêo</text><text x="620" y="194" text-anchor="middle" fill="#e5e7eb" font-family="Inter,sans-serif" font-size="11" font-weight="400">frágil a mudanças de interface</text></g>
+      <text x="400" y="306" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" font-style="italic">Balança entre custo de montar a integraçêo e custo de repetir a tarefa na tela</text></svg>
+        <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> A balança vira na terceira ou quarta repetiçêo. Antes disso, operar a tela é honesto; depois, é desperdício.</figcaption>
       </figure>
       
       <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
@@ -684,7 +684,7 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Chamada barata primeiro</h4>
             
-            <p class="text-neutral-300 text-sm" data-inema-block="m2-2-p18">Uma operação de leitura. Se falhar aqui, não adianta delegar a tarefa grande.</p>
+            <p class="text-neutral-300 text-sm" data-inema-block="m2-2-p18">Uma operaçêo de leitura. Se falhar aqui, nêo adianta delegar a tarefa grande.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -715,11 +715,11 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
-          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Chamada barata de verificação, antes de qualquer tarefa pesada</p></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Chamada barata de verificaçêo, antes de qualquer tarefa pesada</p></div>
           <button type="button" data-copy class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors">Copiar</button>
         </div>
-        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">Usando o servidor MCP &lt;NOME&gt;: faça a operação de leitura mais simples que ele oferece e me mostre o retorno bruto. Não modifique nada.</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> O retorno bruto aparece e faz sentido para o aplicativo alvo. Erro aqui é conexão ou aplicativo fechado, não prompt.</div>
+        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">Usando o servidor MCP &lt;NOME&gt;: faça a operaçêo de leitura mais simples que ele oferece e me mostre o retorno bruto. Nêo modifique nada.</code></pre>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> O retorno bruto aparece e faz sentido para o aplicativo alvo. Erro aqui é conexêo ou aplicativo fechado, nêo prompt.</div>
       </div>
       
       <button type="button" data-inema-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
@@ -734,29 +734,29 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
     
       <div class="bg-dark-800 rounded-2xl border border-blue-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-1 flex items-center"><span class="mr-2">🧪</span> Teste rápido do módulo</h3>
-        <p class="text-sm text-neutral-400 mb-5">Três perguntas. Clique numa opção para ver a resposta.</p>
+        <p class="text-sm text-neutral-400 mb-5">Três perguntas. Clique numa opçêo para ver a resposta.</p>
         <div class="space-y-5">
         
           <div class="qz" data-q="1">
             <p class="font-semibold text-neutral-100 mb-3">1. Por que uma tarefa longa via MCP converge melhor que um script único?</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">O modelo é mais rápido</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">O agente vê o retorno de cada chamada e corrige no mesmo ciclo</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">MCP usa menos tokens</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Scripts não funcionam com IA</button>
+              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">O modelo é mais rápido</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">O agente vê o retorno de cada chamada e corrige no mesmo ciclo</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">MCP usa menos tokens</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Scripts nêo funcionam com IA</button>
             </div>
-            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O retorno estruturado a cada chamada encurta o laço entre erro e correção."></p>
+            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O retorno estruturado a cada chamada encurta o laço entre erro e correçêo."></p>
           </div>
           <div class="qz" data-q="2">
             <p class="font-semibold text-neutral-100 mb-3">2. O servidor MCP conecta mas toda chamada falha. Primeira hipótese:</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Modelo errado</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">O aplicativo alvo está fechado ou sem o complemento ativo</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Falta esforço high</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Precisa de skill</button>
             </div>
-            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O servidor fala com o aplicativo aberto; sem a outra ponta, a conexão existe e a chamada não."></p>
+            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O servidor fala com o aplicativo aberto; sem a outra ponta, a conexêo existe e a chamada nêo."></p>
           </div>
           <div class="qz" data-q="3">
             <p class="font-semibold text-neutral-100 mb-3">3. Você opera a mesma busca num site sem API toda semana. Melhor caminho:</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Computer use toda semana</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Mapear uma vez com computer use e gerar uma ferramenta</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Escrever um servidor MCP para o site</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Fazer na mão</button>
+              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Computer use toda semana</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Mapear uma vez com computer use e gerar uma ferramenta</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Escrever um servidor MCP para o site</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Fazer na mêo</button>
             </div>
-            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="A balança vira na terceira repetição: custo único de montar contra custo recorrente de operar a tela."></p>
+            <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="A balança vira na terceira repetiçêo: custo único de montar contra custo recorrente de operar a tela."></p>
           </div>
         </div>
       </div>
@@ -766,9 +766,9 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
       <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📋</span> Resumo do módulo</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">MCP dá capacidade</strong><span class="text-neutral-400"> - ferramentas com retorno estruturado; o laço curto é o ganho.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Conexão é a falha comum</strong><span class="text-neutral-400"> - codex mcp add/list/get; teste com chamada de leitura barata.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Marcos em tarefa longa</strong><span class="text-neutral-400"> - evidência a cada parada e cláusula de travamento de 5 minutos.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Retomar</strong><span class="text-neutral-400"> - mesma conversa, "continue", conferindo o disco antes de refazer.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Escolher o caminho</strong><span class="text-neutral-400"> - frequência e retorno estruturado decidem entre MCP, ferramenta, skill e tela.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">MCP dá capacidade</strong><span class="text-neutral-400"> - ferramentas com retorno estruturado; o laço curto é o ganho.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Conexêo é a falha comum</strong><span class="text-neutral-400"> - codex mcp add/list/get; teste com chamada de leitura barata.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Marcos em tarefa longa</strong><span class="text-neutral-400"> - evidência a cada parada e cláusula de travamento de 5 minutos.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Retomar</strong><span class="text-neutral-400"> - mesma conversa, "continue", conferindo o disco antes de refazer.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Escolher o caminho</strong><span class="text-neutral-400"> - frequência e retorno estruturado decidem entre MCP, ferramenta, skill e tela.</span></div></div>
         </div>
-        <div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">2.3 - Cota, custo e orquestração</p></div>
+        <div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">2.3 - Cota, custo e orquestraçêo</p></div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="modulo-2-1.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">&#8592; Módulo 2.1</a>
           <a href="modulo-2-3.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">Próximo módulo &#8594;</a>
@@ -780,10 +780,10 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
   <!-- FOOTER -->
   <footer class="border-t border-dark-600 mt-16 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-2">
-      <p>GPT-6 Astra: operação técnica · Trilha 2 — Construir e escalar · 2026 ·
+      <p>GPT-6 Astra: operaçêo técnica · Trilha 2 — Construir e escalar · 2026 ·
         <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> -
         <a href="https://inema.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
-      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://inematds.github.io/gpt6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
+      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentaçêo do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versêo leiga deste conteúdo: <a href="https://inematds.github.io/gpt6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
     </div>
   </footer>
 
@@ -825,7 +825,7 @@ Antes de agir: confira o que já existe no disco (./art, ./public/models, ./src/
       const ok = opt.getAttribute('data-ok') === '1';
       qz.querySelectorAll('.qz-opt').forEach(o => { o.setAttribute('data-state', o.getAttribute('data-ok') === '1' ? 'ok' : (o === opt ? 'no' : '')); o.disabled = true; });
       qz.setAttribute('data-answered', ok ? 'ok' : 'no');
-      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Não é essa. ') + (fb.getAttribute('data-text') || '');
+      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Nêo é essa. ') + (fb.getAttribute('data-text') || '');
     });
     // Copiar código
     document.addEventListener('click', (e) => {

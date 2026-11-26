@@ -51,7 +51,7 @@
  "tracks": [
   {
    "n": "1",
-   "title": "Setup e operação",
+   "title": "Setup e operaçêo",
    "modules": [
     {
      "id": "1-1",
@@ -97,7 +97,7 @@
     },
     {
      "id": "2-3",
-     "title": "Cota, custo e orquestração",
+     "title": "Cota, custo e orquestraçêo",
      "topics": 6,
      "href": "curso/trilha2/modulo-2-3.html"
     },
@@ -215,7 +215,7 @@
     .qz-opt[data-state="no"] { border-color: #ef4444; background: rgba(239,68,68,.12); }
     .qz-fb { display:none; } .qz[data-answered] .qz-fb { display:block; }
 
-    /* TOC do módulo é um bloco inline, não uma barra lateral sticky */
+    /* TOC do módulo é um bloco inline, nêo uma barra lateral sticky */
     [data-ARCKHÉ-toc] { position: static !important; top: auto !important; max-height: none !important; }
     /* Painel de aparência (classes internas) */
     .ARCKHÉ-appearance-sec { margin-bottom: .75rem; }
@@ -523,7 +523,7 @@
       const ok = opt.getAttribute('data-ok') === '1';
       qz.querySelectorAll('.qz-opt').forEach(o => { o.setAttribute('data-state', o.getAttribute('data-ok') === '1' ? 'ok' : (o === opt ? 'no' : '')); o.disabled = true; });
       qz.setAttribute('data-answered', ok ? 'ok' : 'no');
-      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Não é essa. ') + (fb.getAttribute('data-text') || '');
+      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Nêo é essa. ') + (fb.getAttribute('data-text') || '');
     });
     // Copiar código
     document.addEventListener('click', (e) => {

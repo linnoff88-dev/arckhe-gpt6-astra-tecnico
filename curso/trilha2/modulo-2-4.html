@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="ARCKHÉ-course" content="gpt6astratec">
-  <title>Memória compartilhada e o sistema completo | GPT-6 Astra: operação técnica</title>
-  <meta name="description" content="O incômodo mais citado por quem usa vários agentes é que eles não sabem nada uns dos outros: cada conversa recomeça do zero. A saída não é um produto, é um formato: notas em arquivos de texto numa pasta que todos os agentes leem e escrevem. Este módulo monta essa camada e junta tudo o que o curso construiu.">
+  <title>Memória compartilhada e o sistema completo | GPT-6 Astra: operaçêo técnica</title>
+  <meta name="description" content="O incômodo mais citado por quem usa vários agentes é que eles nêo sabem nada uns dos outros: cada conversa recomeça do zero. A saída nêo é um produto, é um formato: notas em arquivos de texto numa pasta que todos os agentes leem e escrevem. Este módulo monta essa camada e junta tudo o que o curso construiu.">
 
   <!-- ANTI-FOUC: bloqueante, antes de tudo -->
   <script>
@@ -53,7 +53,7 @@
  "tracks": [
   {
    "n": "1",
-   "title": "Setup e operação",
+   "title": "Setup e operaçêo",
    "modules": [
     {
      "id": "1-1",
@@ -99,7 +99,7 @@
     },
     {
      "id": "2-3",
-     "title": "Cota, custo e orquestração",
+     "title": "Cota, custo e orquestraçêo",
      "topics": 6,
      "href": "curso/trilha2/modulo-2-3.html"
     },
@@ -218,7 +218,7 @@
     .qz-opt[data-state="no"] { border-color: #ef4444; background: rgba(239,68,68,.12); }
     .qz-fb { display:none; } .qz[data-answered] .qz-fb { display:block; }
 
-    /* TOC do módulo é um bloco inline, não uma barra lateral sticky */
+    /* TOC do módulo é um bloco inline, nêo uma barra lateral sticky */
     [data-ARCKHÉ-toc] { position: static !important; top: auto !important; max-height: none !important; }
     /* Painel de aparência (classes internas) */
     .ARCKHÉ-appearance-sec { margin-bottom: .75rem; }
@@ -327,7 +327,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.4</span>
       <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧠 Memória compartilhada e o sistema completo</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">O incômodo mais citado por quem usa vários agentes é que eles não sabem nada uns dos outros: cada conversa recomeça do zero. A saída não é um produto, é um formato: notas em arquivos de texto numa pasta que todos os agentes leem e escrevem. Este módulo monta essa camada e junta tudo o que o curso construiu.</p>
+      <p class="text-lg text-neutral-400 max-w-3xl">O incômodo mais citado por quem usa vários agentes é que eles nêo sabem nada uns dos outros: cada conversa recomeça do zero. A saída nêo é um produto, é um formato: notas em arquivos de texto numa pasta que todos os agentes leem e escrevem. Este módulo monta essa camada e junta tudo o que o curso construiu.</p>
       
       <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">45</div><div class="text-xs text-neutral-400">Minutos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Avançado</div><div class="text-xs text-neutral-400">Nível</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Prática</div><div class="text-xs text-neutral-400">Tipo</div></div>
@@ -343,7 +343,7 @@
     <nav aria-label="Tópicos deste módulo" class="mb-12 bg-dark-800 rounded-xl border border-dark-600 p-5" data-ARCKHÉ-toc>
       <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-3">Neste módulo</p>
       <ol class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-        <li><a href="#topico-1" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>O problema: contexto que não atravessa sessões</span></a></li><li><a href="#topico-2" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Uma base em arquivos de texto</span></a></li><li><a href="#topico-3" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Conectar os agentes à base</span></a></li><li><a href="#topico-4" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Visualizar e revisar a base</span></a></li><li><a href="#topico-5" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span><span>O sistema completo</span></a></li><li><a href="#topico-6" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</span><span>Prática final: montar a base e fechar um ciclo</span></a></li>
+        <li><a href="#topico-1" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span><span>O problema: contexto que nêo atravessa sessões</span></a></li><li><a href="#topico-2" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span><span>Uma base em arquivos de texto</span></a></li><li><a href="#topico-3" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span><span>Conectar os agentes à base</span></a></li><li><a href="#topico-4" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span><span>Visualizar e revisar a base</span></a></li><li><a href="#topico-5" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span><span>O sistema completo</span></a></li><li><a href="#topico-6" class="flex items-start gap-2 text-neutral-300 hover:text-blue-400"><span class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">6</span><span>Prática final: montar a base e fechar um ciclo</span></a></li>
       </ol>
     </nav>
 
@@ -351,17 +351,17 @@
     <section id="topico-1" data-ARCKHÉ-topic="modulo-2-4#topico-1" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-        <h2 class="text-2xl font-bold">🧩 O problema: contexto que não atravessa sessões</h2>
+        <h2 class="text-2xl font-bold">🧩 O problema: contexto que nêo atravessa sessões</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p1">Sessões são isoladas por desenho: cada uma nasce sem saber o que a anterior descobriu. Projetos e instruções resolvem parte disso dentro de uma ferramenta. O que não se resolve sozinho é o contexto que atravessa ferramentas: o que você decidiu num agente e precisa valer no outro.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p1">Sessões sêo isoladas por desenho: cada uma nasce sem saber o que a anterior descobriu. Projetos e instruções resolvem parte disso dentro de uma ferramenta. O que nêo se resolve sozinho é o contexto que atravessa ferramentas: o que você decidiu num agente e precisa valer no outro.</p>
 
       <figure class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-        <svg viewBox="0 0 800 340" class="w-full h-auto" role="img" aria-label="Três camadas de memória, da mais volátil à mais durável: contexto da sessão, instruções do projeto, base de conhecimento em arquivos"><defs>
+        <svg viewBox="0 0 800 340" class="w-full h-auto" role="img" aria-label="Três camadas de memória, da mais volátil à mais durável: contexto da sessêo, instruções do projeto, base de conhecimento em arquivos"><defs>
     <linearGradient id="s19-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
     <filter id="s19-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <pattern id="s19-grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1.3" fill="#3b82f6" opacity="0.14"/></pattern>
   </defs><rect width="800" height="340" fill="url(#s19-grid)"/><g ><rect x="100" y="40" width="600" height="52" rx="12" fill="#0e1b26" stroke="#3b82f6" stroke-width="1.6" opacity="0.95"/>
-        <text x="400" y="63" text-anchor="middle" fill="#bfdbfe" font-family="Inter,sans-serif" font-size="14" font-weight="700">Contexto da sessão</text>
+        <text x="400" y="63" text-anchor="middle" fill="#bfdbfe" font-family="Inter,sans-serif" font-size="14" font-weight="700">Contexto da sessêo</text>
         <text x="400" y="81" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="10" font-weight="400">morre ao fechar</text></g><g ><rect x="140" y="110" width="520" height="52" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="1.6" opacity="0.95"/>
         <text x="400" y="133" text-anchor="middle" fill="#9ad6ff" font-family="Inter,sans-serif" font-size="14" font-weight="700">Instruções do projeto</text>
         <text x="400" y="151" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="10" font-weight="400">AGENTS.md, vale num repo</text></g><g ><rect x="180" y="180" width="440" height="52" rx="12" fill="#0e1b26" stroke="#3b82f6" stroke-width="1.6" opacity="0.95"/>
@@ -377,7 +377,7 @@
         <table class="w-full text-sm text-left">
           
           <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">O que guardar</th><th class="px-4 py-3 font-semibold">Onde</th><th class="px-4 py-3 font-semibold">Por quê</th></tr></thead>
-          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Como rodar e testar este projeto</td><td class="px-4 py-3 text-neutral-300">AGENTS.md do repo</td><td class="px-4 py-3 text-neutral-300">Vale para toda sessão daquela pasta</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Mapa e riscos do repo</td><td class="px-4 py-3 text-neutral-300">MAPA.md do repo</td><td class="px-4 py-3 text-neutral-300">Evita releitura completa</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Decisões que atravessam projetos</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Vários agentes, vários repos</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Preferências suas de trabalho</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Estilo, formato de entrega, o que reprovar</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Segredos, chaves, senhas</td><td class="px-4 py-3 text-neutral-300">Gerenciador de segredos</td><td class="px-4 py-3 text-neutral-300">Nunca em nota nem em repo</td></tr></tbody>
+          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Como rodar e testar este projeto</td><td class="px-4 py-3 text-neutral-300">AGENTS.md do repo</td><td class="px-4 py-3 text-neutral-300">Vale para toda sessêo daquela pasta</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Mapa e riscos do repo</td><td class="px-4 py-3 text-neutral-300">MAPA.md do repo</td><td class="px-4 py-3 text-neutral-300">Evita releitura completa</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Decisões que atravessam projetos</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Vários agentes, vários repos</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Preferências suas de trabalho</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Estilo, formato de entrega, o que reprovar</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">Segredos, chaves, senhas</td><td class="px-4 py-3 text-neutral-300">Gerenciador de segredos</td><td class="px-4 py-3 text-neutral-300">Nunca em nota nem em repo</td></tr></tbody>
         </table>
       </div>
       
@@ -395,7 +395,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">📓 Uma base em arquivos de texto</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p2">O formato importa mais que a ferramenta. Uma nota por ideia, nome descritivo, um cabeçalho pequeno com tipo e data, links entre notas relacionadas. O Obsidian dá visualização e busca em cima disso, mas qualquer agente com acesso ao disco lê a mesma pasta.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p2">O formato importa mais que a ferramenta. Uma nota por ideia, nome descritivo, um cabeçalho pequeno com tipo e data, links entre notas relacionadas. O Obsidian dá visualizaçêo e busca em cima disso, mas qualquer agente com acesso ao disco lê a mesma pasta.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
@@ -411,10 +411,10 @@ data: 2026-09-07
 projetos: [&lt;projeto-a&gt;, &lt;projeto-b&gt;]
 ---
 
-# Orquestração: fronteira planeja, barato executa
+# Orquestraçêo: fronteira planeja, barato executa
 
 Tarefas repetitivas de 10+ passos usam PLANO.md gerado pelo modelo de fronteira
-e execução com modelo local. Medido em &lt;projeto-a&gt;: consumo de cota caiu de
+e execuçêo com modelo local. Medido em &lt;projeto-a&gt;: consumo de cota caiu de
 25% para 11% com resultado equivalente.
 
 Relacionado: [[cota-semanal-como-ler]], [[plano-executavel-formato]]
@@ -427,17 +427,17 @@ ls -R ~/base | head -20</code></pre>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
           <h4 class="font-bold text-blue-400 mb-4">&#10003; Nota que serve a um agente</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Uma decisão ou fato por arquivo</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Data e projetos no cabeçalho</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>O porquê, não só o quê</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Links para notas relacionadas</span></li></ul>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Uma decisêo ou fato por arquivo</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Data e projetos no cabeçalho</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>O porquê, nêo só o quê</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Links para notas relacionadas</span></li></ul>
         </div>
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
           <h4 class="font-bold text-red-400 mb-4">&#10007; Nota que atrapalha</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Arquivo gigante com tudo</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Sem data (o agente não sabe se ainda vale)</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Só conclusão, sem contexto</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Segredos e credenciais</span></li></ul>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Arquivo gigante com tudo</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Sem data (o agente nêo sabe se ainda vale)</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Só conclusêo, sem contexto</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Segredos e credenciais</span></li></ul>
         </div>
       </div>
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Nota velha vira instrução errada</h3>
-        <p class="text-neutral-300" data-ARCKHÉ-block="m2-4-p3">Um agente lê a base como verdade. Nota sem data ou desatualizada faz ele recomendar um comando que não existe mais. Datar tudo e revisar o que envelhece é parte do custo dessa camada.</p>
+        <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> Nota velha vira instruçêo errada</h3>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-4-p3">Um agente lê a base como verdade. Nota sem data ou desatualizada faz ele recomendar um comando que nêo existe mais. Datar tudo e revisar o que envelhece é parte do custo dessa camada.</p>
       </div>
       
       <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
@@ -454,26 +454,26 @@ ls -R ~/base | head -20</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🔄 Conectar os agentes à base</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p4">Duas ligações. Na entrada: uma instrução permanente mandando consultar a base antes de decidir. Na saída: um pedido explícito de registrar o que foi decidido. A leitura pode ser por acesso direto ao disco (o agente já tem, se a pasta estiver no escopo) ou por um servidor MCP de sistema de arquivos, quando o agente roda fora da sua máquina.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p4">Duas ligações. Na entrada: uma instruçêo permanente mandando consultar a base antes de decidir. Na saída: um pedido explícito de registrar o que foi decidido. A leitura pode ser por acesso direto ao disco (o agente já tem, se a pasta estiver no escopo) ou por um servidor MCP de sistema de arquivos, quando o agente roda fora da sua máquina.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
-          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Instrução permanente que liga qualquer projeto à base</p></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Instruçêo permanente que liga qualquer projeto à base</p></div>
           <button type="button" data-copy class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors">Copiar</button>
         </div>
         <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-markdown">## Base de conhecimento
 
-Antes de decisões de arquitetura, escolha de ferramenta ou padrão de trabalho,
+Antes de decisões de arquitetura, escolha de ferramenta ou padrêo de trabalho,
 consulte ~/base/ (markdown). Busque por termos do problema:
 
     grep -ril "&lt;termo&gt;" ~/base/ | head -20
 
-Se encontrar nota relevante, cite o arquivo na sua resposta e siga a decisão
+Se encontrar nota relevante, cite o arquivo na sua resposta e siga a decisêo
 registrada. Se a nota contradiz o que eu pedi agora, me avise antes de agir.
 
-Ao fim de uma tarefa que gerou decisão nova, proponha (não crie sozinho) uma
-nota em ~/base/decisoes/ no formato padrão, e me mostre o conteúdo.</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Sessão nova num projeto qualquer: peça uma decisão que já está na base. A resposta deve citar o arquivo. Se não citar, a instrução não está sendo lida ou a pasta está fora do escopo do sandbox.</div>
+Ao fim de uma tarefa que gerou decisêo nova, proponha (nêo crie sozinho) uma
+nota em ~/base/decisoes/ no formato padrêo, e me mostre o conteúdo.</code></pre>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Sessêo nova num projeto qualquer: peça uma decisêo que já está na base. A resposta deve citar o arquivo. Se nêo citar, a instruçêo nêo está sendo lida ou a pasta está fora do escopo do sandbox.</div>
       </div>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
@@ -481,29 +481,29 @@ nota em ~/base/decisoes/ no formato padrão, e me mostre o conteúdo.</code></pr
           <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Dar acesso à base para um agente que roda em outra pasta</p></div>
           <button type="button" data-copy class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors">Copiar</button>
         </div>
-        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-bash"># opção 1: incluir a pasta no escopo da sessão
+        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-bash"># opçêo 1: incluir a pasta no escopo da sessêo
 codex --add-dir ~/base "&lt;TAREFA&gt;"
 
-# opção 2: servidor MCP de sistema de arquivos limitado à base
+# opçêo 2: servidor MCP de sistema de arquivos limitado à base
 codex mcp add base -- &lt;COMANDO_DO_SERVIDOR_DE_ARQUIVOS&gt; ~/base
 codex mcp list</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Peça "liste os títulos das notas em ~/base/decisoes". Uma lista real confirma o acesso. Prefira acesso somente leitura quando o agente não precisa escrever.</div>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> Peça "liste os títulos das notas em ~/base/decisoes". Uma lista real confirma o acesso. Prefira acesso somente leitura quando o agente nêo precisa escrever.</div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
           <h4 class="font-bold text-blue-400 mb-4">&#10003; O agente pode fazer sozinho</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Buscar e ler qualquer nota da base</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Citar o arquivo que embasou a resposta</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Apontar contradição entre nota e pedido atual</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Redigir a proposta de nota nova</span></li></ul>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Buscar e ler qualquer nota da base</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Citar o arquivo que embasou a resposta</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Apontar contradiçêo entre nota e pedido atual</span></li><li class="flex items-start space-x-2"><span class="text-blue-400">&#10003;</span><span>Redigir a proposta de nota nova</span></li></ul>
         </div>
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-          <h4 class="font-bold text-red-400 mb-4">&#10007; Só com a sua aprovação</h4>
-          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Criar arquivo novo na base</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Editar ou apagar nota existente</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Reorganizar pastas e renomear notas</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Registrar como decisão algo que ainda é hipótese</span></li></ul>
+          <h4 class="font-bold text-red-400 mb-4">&#10007; Só com a sua aprovaçêo</h4>
+          <ul class="space-y-3 text-neutral-300"><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Criar arquivo novo na base</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Editar ou apagar nota existente</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Reorganizar pastas e renomear notas</span></li><li class="flex items-start space-x-2"><span class="text-red-400">&#10007;</span><span>Registrar como decisêo algo que ainda é hipótese</span></li></ul>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Propor, não escrever</h3>
-        <p class="text-neutral-300" data-ARCKHÉ-block="m2-4-p5">Deixe o agente propor a nota e você aprovar. Base escrita automaticamente acumula duplicata e conclusão errada, e a próxima sessão lê isso como verdade.</p>
+        <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Propor, nêo escrever</h3>
+        <p class="text-neutral-300" data-ARCKHÉ-block="m2-4-p5">Deixe o agente propor a nota e você aprovar. Base escrita automaticamente acumula duplicata e conclusêo errada, e a próxima sessêo lê isso como verdade.</p>
       </div>
       
       <button type="button" data-ARCKHÉ-read-toggle class="mt-4 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors flex items-center space-x-2 justify-start">
@@ -520,14 +520,14 @@ codex mcp list</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🕸️ Visualizar e revisar a base</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p6">Ferramentas de markdown com grafo mostram notas isoladas e aglomerados. Nota órfã costuma ser uma de duas coisas: ideia que nunca se conectou a nada (candidata a poda) ou assunto novo que ainda vai crescer. A revisão olha data e uso: o que não é citado nem atualizado há meses sai ou vira arquivo morto.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-p6">Ferramentas de markdown com grafo mostram notas isoladas e aglomerados. Nota órfê costuma ser uma de duas coisas: ideia que nunca se conectou a nada (candidata a poda) ou assunto novo que ainda vai crescer. A revisêo olha data e uso: o que nêo é citado nem atualizado há meses sai ou vira arquivo morto.</p>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
-          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Encontrar notas velhas e notas órfãs para revisar</p></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Encontrar notas velhas e notas órfês para revisar</p></div>
           <button type="button" data-copy class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors">Copiar</button>
         </div>
-        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-bash"># notas não modificadas há mais de 180 dias
+        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-bash"># notas nêo modificadas há mais de 180 dias
 find ~/base -name "*.md" -mtime +180 | head -30
 
 # notas que ninguém referencia (nenhum [[link]] aponta para elas)
@@ -536,11 +536,11 @@ for f in $(find . -name "*.md"); do
   n=$(basename "$f" .md)
   grep -rql "\[\[$n\]\]" . &gt;/dev/null 2&gt;&amp;1 || echo "orfa: $f"
 done | head -30</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> As duas listas cabem numa revisão de trinta minutos. Cada item: atualizar com data nova, ligar a outra nota, ou apagar. Nenhum item fica sem decisão.</div>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> As duas listas cabem numa revisêo de trinta minutos. Cada item: atualizar com data nova, ligar a outra nota, ou apagar. Nenhum item fica sem decisêo.</div>
       </div>
 
       <div class="space-y-5 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-2">Ritmo de revisão</h3>
+        <h3 class="text-lg font-semibold text-blue-400 mb-2">Ritmo de revisêo</h3>
         
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
@@ -555,7 +555,7 @@ done | head -30</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Mensal, 30 minutos</h4>
             
-            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p8">Rode as duas buscas acima. Poda e religação.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p8">Rode as duas buscas acima. Poda e religaçêo.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -563,7 +563,7 @@ done | head -30</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Quando um agente errar</h4>
             
-            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p9">Se a recomendação errada veio de uma nota, corrija a nota na hora. É o feedback mais valioso que a base recebe.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p9">Se a recomendaçêo errada veio de uma nota, corrija a nota na hora. É o feedback mais valioso que a base recebe.</p>
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@ done | head -30</code></pre>
       </div>
       
       <figure class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-        <svg viewBox="0 0 800 200" class="w-full h-auto" role="img" aria-label="O fluxo completo do sistema: consultar a base, escrever o contrato, delegar com skill ou MCP, verificar a prova, registrar a decisão na base"><defs>
+        <svg viewBox="0 0 800 200" class="w-full h-auto" role="img" aria-label="O fluxo completo do sistema: consultar a base, escrever o contrato, delegar com skill ou MCP, verificar a prova, registrar a decisêo na base"><defs>
     <linearGradient id="s20-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
     <filter id="s20-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <pattern id="s20-grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1.3" fill="#3b82f6" opacity="0.14"/></pattern>
@@ -603,13 +603,13 @@ done | head -30</code></pre>
         <path class="wf-flow" d="M464.40000000000003 102 L484.40000000000003 102" stroke="#38bdf8" stroke-width="2" fill="none"/><polygon points="480.40000000000003,97 480.40000000000003,107 486.40000000000003,102" fill="#38bdf8"/><g class="wf-a"><rect x="486.40000000000003" y="60" width="124.8" height="84" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="1.8"/>
         <circle cx="504.40000000000003" cy="78" r="10" fill="#38bdf8"/><text x="504.40000000000003" y="82" text-anchor="middle" fill="#0b1220" font-family="Inter,sans-serif" font-size="11" font-weight="700">4</text>
         <text x="548.8000000000001" y="104" text-anchor="middle" fill="#9ad6ff" font-family="Inter,sans-serif" font-size="10.5" font-weight="700">Verificar</text>
-        <text x="548.8000000000001" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">a prova, não o resumo</text></g>
+        <text x="548.8000000000001" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">a prova, nêo o resumo</text></g>
         <path class="wf-flow" d="M613.2 102 L633.2 102" stroke="#38bdf8" stroke-width="2" fill="none"/><polygon points="629.2,97 629.2,107 635.2,102" fill="#38bdf8"/><g class="wf-a"><rect x="635.2" y="60" width="124.8" height="84" rx="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.8"/>
         <circle cx="653.2" cy="78" r="10" fill="#3b82f6"/><text x="653.2" y="82" text-anchor="middle" fill="#0b1220" font-family="Inter,sans-serif" font-size="11" font-weight="700">5</text>
         <text x="697.6" y="104" text-anchor="middle" fill="#bfdbfe" font-family="Inter,sans-serif" font-size="10.5" font-weight="700">Registrar</text>
-        <text x="697.6" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">decisão nova na base</text></g>
+        <text x="697.6" y="122" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="9.5" font-weight="400">decisêo nova na base</text></g>
         
-      <text x="400" y="178" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" font-style="italic">O fluxo completo do sistema: consultar a base, escrever o contrato, delegar com skill ou MCP, verificar a prova, registrar a decisão na base</text></svg>
+      <text x="400" y="178" text-anchor="middle" fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" font-style="italic">O fluxo completo do sistema: consultar a base, escrever o contrato, delegar com skill ou MCP, verificar a prova, registrar a decisêo na base</text></svg>
         <figcaption class="text-xs text-neutral-400 mt-3 px-1"><strong class="text-blue-400">O que olhar:</strong> O último passo alimenta o primeiro. É isso que faz o sistema melhorar por uso em vez de repetir os mesmos erros em projetos diferentes.</figcaption>
       </figure>
 
@@ -622,18 +622,18 @@ done | head -30</code></pre>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">⚙️</div>
-          <h4 class="font-semibold text-blue-400 mb-2">Execução</h4>
-          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p11">Skill quando o método é seu, MCP quando falta capacidade, tela quando não há alternativa, plano quando o volume é grande.</p>
+          <h4 class="font-semibold text-blue-400 mb-2">Execuçêo</h4>
+          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p11">Skill quando o método é seu, MCP quando falta capacidade, tela quando nêo há alternativa, plano quando o volume é grande.</p>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">✅</div>
-          <h4 class="font-semibold text-blue-400 mb-2">Verificação</h4>
+          <h4 class="font-semibold text-blue-400 mb-2">Verificaçêo</h4>
           <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p12">Git limpo antes, prova depois, rollback barato. Reprovar é normal e gera o critério da próxima rodada.</p>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-2xl mb-2">🧠</div>
           <h4 class="font-semibold text-blue-400 mb-2">Registro</h4>
-          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p13">Decisão nova vira nota datada. Amanhã, outro agente em outro projeto começa sabendo.</p>
+          <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p13">Decisêo nova vira nota datada. Amanhê, outro agente em outro projeto começa sabendo.</p>
         </div>
       </div>
 
@@ -641,7 +641,7 @@ done | head -30</code></pre>
         <table class="w-full text-sm text-left">
           
           <thead class="bg-dark-800 text-blue-400"><tr><th class="px-4 py-3 font-semibold">Módulo</th><th class="px-4 py-3 font-semibold">O que entregou</th><th class="px-4 py-3 font-semibold">Onde entra no fluxo</th></tr></thead>
-          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.1</td><td class="px-4 py-3 text-neutral-300">Loop e contrato de três linhas</td><td class="px-4 py-3 text-neutral-300">Entrada</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.2</td><td class="px-4 py-3 text-neutral-300">Três superfícies, sandbox, AGENTS.md</td><td class="px-4 py-3 text-neutral-300">Entrada e execução</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.3</td><td class="px-4 py-3 text-neutral-300">Computer use com rascunho e prova</td><td class="px-4 py-3 text-neutral-300">Execução</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.4</td><td class="px-4 py-3 text-neutral-300">Iteração com git e critérios de aceite</td><td class="px-4 py-3 text-neutral-300">Verificação</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.1</td><td class="px-4 py-3 text-neutral-300">Skills de ferramenta e de gosto</td><td class="px-4 py-3 text-neutral-300">Execução</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.2</td><td class="px-4 py-3 text-neutral-300">MCP e tarefas longas com marcos</td><td class="px-4 py-3 text-neutral-300">Execução</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.3</td><td class="px-4 py-3 text-neutral-300">Cota, esforço e orquestração</td><td class="px-4 py-3 text-neutral-300">Execução</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.4</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Entrada e registro</td></tr></tbody>
+          <tbody class="divide-y divide-dark-600"><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.1</td><td class="px-4 py-3 text-neutral-300">Loop e contrato de três linhas</td><td class="px-4 py-3 text-neutral-300">Entrada</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.2</td><td class="px-4 py-3 text-neutral-300">Três superfícies, sandbox, AGENTS.md</td><td class="px-4 py-3 text-neutral-300">Entrada e execuçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.3</td><td class="px-4 py-3 text-neutral-300">Computer use com rascunho e prova</td><td class="px-4 py-3 text-neutral-300">Execuçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">1.4</td><td class="px-4 py-3 text-neutral-300">Iteraçêo com git e critérios de aceite</td><td class="px-4 py-3 text-neutral-300">Verificaçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.1</td><td class="px-4 py-3 text-neutral-300">Skills de ferramenta e de gosto</td><td class="px-4 py-3 text-neutral-300">Execuçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.2</td><td class="px-4 py-3 text-neutral-300">MCP e tarefas longas com marcos</td><td class="px-4 py-3 text-neutral-300">Execuçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.3</td><td class="px-4 py-3 text-neutral-300">Cota, esforço e orquestraçêo</td><td class="px-4 py-3 text-neutral-300">Execuçêo</td></tr><tr class="bg-dark-900/40"><td class="px-4 py-3 font-semibold text-neutral-100">2.4</td><td class="px-4 py-3 text-neutral-300">Base em arquivos</td><td class="px-4 py-3 text-neutral-300">Entrada e registro</td></tr></tbody>
         </table>
       </div>
       
@@ -668,7 +668,7 @@ done | head -30</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Crie a base</h4>
             
-            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p14">As pastas do tópico 2 e três notas: uma decisão que você já tomou, uma preferência de trabalho, um aprendizado deste curso.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p14">As pastas do tópico 2 e três notas: uma decisêo que você já tomou, uma preferência de trabalho, um aprendizado deste curso.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -684,7 +684,7 @@ done | head -30</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Escolha uma tarefa real</h4>
             
-            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p16">Algo que você faria hoje de qualquer jeito. Não invente exercício.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p16">Algo que você faria hoje de qualquer jeito. Nêo invente exercício.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -708,25 +708,25 @@ done | head -30</code></pre>
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Confirme o ciclo</h4>
             
-            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p19">Sessão nova, pergunta relacionada. A resposta deve citar a nota que você acabou de salvar.</p>
+            <p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m2-4-p19">Sessêo nova, pergunta relacionada. A resposta deve citar a nota que você acabou de salvar.</p>
           </div>
         </div>
       </div>
 
       <div class="codebox bg-dark-800 rounded-xl border border-blue-500/30 overflow-hidden mb-6">
         <div class="px-5 py-3 border-b border-dark-600 flex items-start justify-between gap-3 flex-wrap">
-          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Fechar o ciclo: pedir a nota da decisão que a tarefa gerou</p></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Copie e rode</p><p class="text-sm text-neutral-300">Fechar o ciclo: pedir a nota da decisêo que a tarefa gerou</p></div>
           <button type="button" data-copy class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors">Copiar</button>
         </div>
-        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">A tarefa terminou e foi verificada. Proponha uma nota para ~/base/decisoes/ no formato padrão (cabeçalho com tipo, data e projetos), contendo:
-- a decisão em uma frase;
+        <pre class="p-5 text-sm text-neutral-100 bg-dark-900/60 font-mono leading-relaxed"><code class="language-text">A tarefa terminou e foi verificada. Proponha uma nota para ~/base/decisoes/ no formato padrêo (cabeçalho com tipo, data e projetos), contendo:
+- a decisêo em uma frase;
 - o contexto: qual problema levou a ela;
 - a evidência: o que foi medido ou observado;
-- o que NÃO fazer, aprendido nesta tarefa;
+- o que NêO fazer, aprendido nesta tarefa;
 - links para notas relacionadas que já existirem em ~/base/.
 
-Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
-        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> A nota tem data e evidência concreta, não generalidade. Depois de salvar, abra uma sessão nova e faça uma pergunta relacionada: a resposta deve citar o arquivo pelo caminho.</div>
+Mostre o conteúdo. Nêo crie o arquivo até eu aprovar.</code></pre>
+        <div class="px-5 py-3 border-t border-dark-600 text-sm text-neutral-400"><strong class="text-neutral-300">Como verificar:</strong> A nota tem data e evidência concreta, nêo generalidade. Depois de salvar, abra uma sessêo nova e faça uma pergunta relacionada: a resposta deve citar o arquivo pelo caminho.</div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
@@ -746,18 +746,18 @@ Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
     
       <div class="bg-dark-800 rounded-2xl border border-blue-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-1 flex items-center"><span class="mr-2">🧪</span> Teste rápido do módulo</h3>
-        <p class="text-sm text-neutral-400 mb-5">Três perguntas. Clique numa opção para ver a resposta.</p>
+        <p class="text-sm text-neutral-400 mb-5">Três perguntas. Clique numa opçêo para ver a resposta.</p>
         <div class="space-y-5">
         
           <div class="qz" data-q="1">
-            <p class="font-semibold text-neutral-100 mb-3">1. Por que markdown numa pasta e não um produto de memória fechado?</p>
+            <p class="font-semibold text-neutral-100 mb-3">1. Por que markdown numa pasta e nêo um produto de memória fechado?</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">É mais bonito</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Todo agente lê arquivo, versiona com git e não depende de um fornecedor</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">É mais rápido</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Não precisa de disco</button>
+              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">É mais bonito</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Todo agente lê arquivo, versiona com git e nêo depende de um fornecedor</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">É mais rápido</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Nêo precisa de disco</button>
             </div>
             <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O formato aberto é o que permite vários agentes diferentes usarem a mesma base."></p>
           </div>
           <div class="qz" data-q="2">
-            <p class="font-semibold text-neutral-100 mb-3">2. Qual é o risco de deixar o agente escrever na base sem revisão?</p>
+            <p class="font-semibold text-neutral-100 mb-3">2. Qual é o risco de deixar o agente escrever na base sem revisêo?</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Fica lento</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Duplicatas e conclusões erradas viram verdade para as próximas sessões</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Ocupa disco</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Nenhum</button>
             </div>
@@ -766,7 +766,7 @@ Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
           <div class="qz" data-q="3">
             <p class="font-semibold text-neutral-100 mb-3">3. Qual passo faz o sistema melhorar por uso?</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Escrever o contrato</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Delegar com skill</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Registrar a decisão nova na base ao fim do ciclo</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Verificar a prova</button>
+              <button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Escrever o contrato</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Delegar com skill</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="1">Registrar a decisêo nova na base ao fim do ciclo</button><button type="button" class="qz-opt text-left px-4 py-3 rounded-lg border border-dark-600 bg-dark-900/40 text-sm text-neutral-300 hover:border-blue-500/40 transition-colors" data-ok="0">Verificar a prova</button>
             </div>
             <p class="qz-fb mt-3 text-sm text-neutral-300" data-text="O registro fecha o laço: a próxima tarefa, em outro projeto, começa sabendo."></p>
           </div>
@@ -778,7 +778,7 @@ Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
       <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📋</span> Resumo do módulo</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Memória em camadas</strong><span class="text-neutral-400"> - sessão, projeto, mapa do repo, base comum. Só a última atravessa ferramentas.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Formato aberto</strong><span class="text-neutral-400"> - markdown em pasta, uma ideia por arquivo, data e links. Sem segredos.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Ler e propor</strong><span class="text-neutral-400"> - instrução permanente para consultar antes de decidir; nota proposta, você aprova.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Revisar</strong><span class="text-neutral-400"> - notas velhas e órfãs saem ou se religam; nota errada corrigida na hora do erro.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">O laço fechado</strong><span class="text-neutral-400"> - consultar, contratar, delegar, verificar, registrar. A volta seguinte é mais barata.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Memória em camadas</strong><span class="text-neutral-400"> - sessêo, projeto, mapa do repo, base comum. Só a última atravessa ferramentas.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Formato aberto</strong><span class="text-neutral-400"> - markdown em pasta, uma ideia por arquivo, data e links. Sem segredos.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Ler e propor</strong><span class="text-neutral-400"> - instruçêo permanente para consultar antes de decidir; nota proposta, você aprova.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">Revisar</strong><span class="text-neutral-400"> - notas velhas e órfês saem ou se religam; nota errada corrigida na hora do erro.</span></div></div><div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">&#10003;</span><div><strong class="text-white">O laço fechado</strong><span class="text-neutral-400"> - consultar, contratar, delegar, verificar, registrar. A volta seguinte é mais barata.</span></div></div>
         </div>
         
         <div class="flex flex-col sm:flex-row gap-4">
@@ -792,10 +792,10 @@ Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
   <!-- FOOTER -->
   <footer class="border-t border-dark-600 mt-16 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm space-y-2">
-      <p>GPT-6 Astra: operação técnica · Trilha 2 — Construir e escalar · 2026 ·
+      <p>GPT-6 Astra: operaçêo técnica · Trilha 2 — Construir e escalar · 2026 ·
         <a href="https://ARCKHÉ AI" target="_blank" class="text-sky-400 hover:text-sky-300">ARCKHÉ AI</a> -
         <a href="https://ARCKHÉ.pro" target="_blank" class="text-amber-700 dark:text-slate-300">PRO</a></p>
-      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentação do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versão leiga deste conteúdo: <a href="https://linnoff88-dev.github.io/ target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
+      <p class="text-xs">Fontes: <a href="https://openai.com/index/gpt-6-astra/" target="_blank" class="text-sky-400 hover:text-sky-300">página de lançamento do GPT-6 Astra</a> (OpenAI) · <a href="https://developers.openai.com/codex/" target="_blank" class="text-sky-400 hover:text-sky-300">documentaçêo do Codex</a> · <a href="https://www.remotion.dev/" target="_blank" class="text-sky-400 hover:text-sky-300">Remotion</a> · <a href="https://github.com/ahujasid/blender-mcp" target="_blank" class="text-sky-400 hover:text-sky-300">Blender MCP</a> · <a href="https://obsidian.md/" target="_blank" class="text-sky-400 hover:text-sky-300">Obsidian</a>. Comandos conferidos no Codex CLI 0.153 (set/2026). Versêo leiga deste conteúdo: <a href="https://linnoff88-dev.github.io/ target="_blank" class="text-sky-400 hover:text-sky-300">GPT-6 Astra na prática</a>.</p>
     </div>
   </footer>
 
@@ -837,7 +837,7 @@ Mostre o conteúdo. Não crie o arquivo até eu aprovar.</code></pre>
       const ok = opt.getAttribute('data-ok') === '1';
       qz.querySelectorAll('.qz-opt').forEach(o => { o.setAttribute('data-state', o.getAttribute('data-ok') === '1' ? 'ok' : (o === opt ? 'no' : '')); o.disabled = true; });
       qz.setAttribute('data-answered', ok ? 'ok' : 'no');
-      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Não é essa. ') + (fb.getAttribute('data-text') || '');
+      const fb = qz.querySelector('.qz-fb'); if (fb) fb.textContent = (ok ? '✓ Certo. ' : '✗ Nêo é essa. ') + (fb.getAttribute('data-text') || '');
     });
     // Copiar código
     document.addEventListener('click', (e) => {
